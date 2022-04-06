@@ -1,0 +1,83 @@
+.box_menuMain {
+    display: flex;
+    align-self: center;
+    align-content: center;
+
+    position: fixed;
+    z-index: 1;
+
+    border-radius: 18px;
+
+    padding: 4px;
+    margin: 4px;
+    width: 90%;
+
+    background: rgba(255,255,255,0.3);
+    box-shadow: 0px 2px 4px rgba(1,1,1,1);
+    //border: 1px solid green;
+}
+.box_menuMain .el_mainMenu_A {
+    display: flex;
+    align-items: end;
+
+    //border: 1px solid green;
+}
+.box_menuMain .el_mainMenu_A .el_txt_mainMenu {
+    display: flex;
+
+    margin-left: 30px;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    //border: 1px solid green;
+}
+.box_menuMain .el_mainMenu_B {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+
+    //border: 1px solid green;
+}
+.box_menuMain .el_mainMenu_B .img_logo {
+    display: flex;
+    
+    height: 100px;
+    width: 100px;
+
+    margin-left: 20px;
+
+    //border: 1px solid green;
+}
+.box_menuMain .el_mainMenu_B .extrema_esquerda_menuMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+
+    margin-right: 20px;
+
+    //border: 1px solid rgb(128, 19, 0);
+}
+.box_menuMain .el_mainMenu_B .extrema_esquerda_menuMain .el_esquerda_menuMainUSER {
+    display: flex;
+
+    margin-right: 20px;
+
+    //border: 1px solid rgb(128, 19, 0);
+}
+.box_menuMain .el_mainMenu_B .extrema_esquerda_menuMain .el_esquerda_menuMain {
+    display: flex;
+
+    //border: 1px solid rgb(128, 19, 0);
+}
+
+.shadowElTxtMenuMain:hover {
+    color: rgba(121, 174, 64, 1);
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+}

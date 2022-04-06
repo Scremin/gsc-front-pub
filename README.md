@@ -1,4 +1,4 @@
-# g2
+# green_house
 
 ## Project setup
 ```

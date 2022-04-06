@@ -1,0 +1,25 @@
+.box_carrinhoPageD {
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+
+    background: linear-gradient(1deg, rgba(168,243,15,1), rgb(255, 255, 255));
+    //border: 1px solid red;
+}
+.box_carrinhoPageD .work_carrinhoPageD {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    padding: 20px;
+    margin-top: 180px;
+    margin-bottom: 180px;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.2);
+    //border: 1px solid red;
+}

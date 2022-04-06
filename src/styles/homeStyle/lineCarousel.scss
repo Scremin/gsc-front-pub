@@ -1,0 +1,136 @@
+.box_lineCarousel {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+
+    height: 300px;
+
+    margin-top: 200px;
+
+    //border: 1px solid red;
+}
+.box_lineCarousel .div_carousel {
+    display: flex;
+    align-items: center;
+    
+    height: 400px;
+    //width: 1000px;
+    width: 80%;
+
+    //border: 1px solid rgb(19, 7, 7);
+}
+.box_lineCarousel .div_carousel .imgs_carousel {
+    display: flex;
+
+    //height: 100%;
+    height: 400px;
+    width: 60%;
+
+    border-radius: 18px;
+
+    box-shadow: 0px 1px 10px rgba(168,243,15,1);
+    //border: 1px solid rgb(247, 14, 14);
+}
+.box_lineCarousel .div_carousel .txt_carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    //height: 50%;
+    //width: 35%;
+
+    //color: rgba(121, 174, 64, 1);
+    color: rgb(17, 59, 57);
+
+    //border: 1px solid rgb(139, 93, 93);
+}
+.box_lineCarousel .div_carousel .txt_carousel .tit_carousel {
+    display: flex;
+
+    margin-left: 30px;
+    
+    font-size: 2.2rem;
+
+    //color: rgba(121, 174, 64, 1);
+    color: rgb(17, 59, 57);
+
+    //border: 1px solid rgb(139, 93, 93);
+}
+.box_lineCarousel .div_carousel .txt_carousel .frase_carousel {
+    display: flex;
+    justify-content: center;
+    
+    margin-right: -50px;
+    margin-left: 30px;
+
+    font-size: 1.6rem;
+
+    //border: 1px solid rgb(139, 93, 93);
+}
+.box_lineCarousel .div_carousel .txt_carousel .btn_carousel {
+    display: flex;
+    align-self: end;
+
+    //border: 1px solid rgb(139, 93, 93);
+}
+
+/* SAMLL */
+.box_lineCarousel .div_carousel_s {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: -20px;
+    
+    height: 300px;
+    //width: 1000px;
+    //width: 80%;
+
+    //border: 1px solid rgb(19, 7, 7);
+}
+.box_lineCarousel .div_carousel_s .imgs_carousel_s {
+    display: flex;
+
+    //height: 100%;
+    height: 400px;
+    width: 180px;
+
+    border-radius: 18px;
+
+    box-shadow: 0px 4px 4px black;
+    //border: 1px solid rgb(247, 14, 14);
+}
+.box_lineCarousel .div_carousel_s .txt_carousel_s {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    //height: 50%;
+    //width: 35%;
+
+    //color: rgba(121, 174, 64, 1);
+    color: rgb(17, 59, 57);
+
+    //border: 1px solid rgb(139, 93, 93);
+}
+.box_lineCarousel .div_carousel_s .txt_carousel_s .tit_carousel_s {
+    display: flex;
+
+    margin-left: 30px;
+    
+    font-size: 1.2rem;
+
+    //color: rgba(121, 174, 64, 1);
+    color: rgb(17, 59, 57);
+
+    //border: 1px solid rgb(139, 93, 93);
+}
+.box_lineCarousel .div_carousel_s .txt_carousel_s .btn_carousel_s {
+    display: flex;
+    align-self: end;
+
+    //border: 1px solid rgb(139, 93, 93);
+}

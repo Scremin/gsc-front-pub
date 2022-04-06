@@ -1,0 +1,56 @@
+.box_clientLoginCarrinho {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0px 2px 10px rgb(250, 248, 248);
+    //border: 1px solid rgb(255, 0, 200);
+}
+.box_clientLoginCarrinho .box_formulario_login {
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px;
+
+    //border: 1px solid red;
+}
+.box_clientLoginCarrinho .box_formulario_login .labelNameClient {
+    display: flex;
+    align-items: center;
+
+    height: 30px;
+
+    color: rgba(121, 174, 64, 1);
+    font-weight: bold;
+
+    //border: 1px solid red;
+}
+.box_clientLoginCarrinho .box_formulario_login .inputNameClient {
+    display: flex;
+
+    height: 30px;
+    padding: 4px;
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+
+    box-shadow: 0px 2px 4px rgb(1,1,1);
+    //border: 1px solid red;
+}
+.box_clientLoginCarrinho .box_formulario_login .cadastroNameClient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(1,1,1);
+    font-weight: bold;
+
+    height: 30px;
+    margin-top: 4px;
+
+    cursor: pointer;
+
+    //border: 1px solid red;
+}

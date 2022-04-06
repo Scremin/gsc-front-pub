@@ -1,0 +1,95 @@
+.box_carrinho { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    background: linear-gradient(1deg, rgba(168,243,15,1), rgb(255, 255, 255));
+
+    //border: 1px solid red;
+}
+.box_carrinho .mainLineCarrinho { 
+    display: flex;
+    
+    width: 90%;
+    padding: 10px;
+
+    margin-top: 180px;
+    //margin-bottom: 180px;
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.2);
+    //border: 1px solid red;
+}
+.box_carrinho .lineFechamentoCarrinho { 
+    display: flex;
+    justify-content: center;
+    
+    width: 90%;
+    padding: 20px;
+
+    margin-top: 10px;
+    margin-bottom: 180px;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.2);
+    //border: 1px solid red;
+}
+.box_carrinho .mainLineCarrinho .carrinho { 
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+
+    //border: 1px solid red;
+}
+.box_carrinho .mainLineCarrinho .carrinho .meuCarrinho { 
+    display: flex;
+    align-self: start;
+
+    margin-bottom: 30px;
+
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(17, 59, 57);
+
+    //border: 1px solid red;
+}
+.box_carrinho .mainLineCarrinho .carrinho .painelCarrinho { 
+    display: flex;
+    flex-direction: column;
+
+    //border: 1px solid red;
+}
+
+.box_carrinho .mainLineCarrinho .propaganda_carrinho { 
+    display: flex;
+    flex-direction: column;
+
+    width: 30%;
+
+    //border: 1px solid red;
+}
+.box_carrinho .mainLineCarrinho .propaganda_carrinho .tx_propaganda { 
+    display: flex;
+
+    margin-top: 10px;
+    margin-left: 4px;
+
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: rgb(17, 59, 57); /*rgb(168, 243, 15); rgba(121, 174, 64, 1); */
+
+    //border: 1px solid red;
+}
+.box_carrinho .mainLineCarrinho .propaganda_carrinho .img_propaganda { 
+    display: flex;
+
+    border-radius: 8px;
+
+    box-shadow: 0px 2px 4px rgba(1,1,1,1);
+    //border: 1px solid red;
+}

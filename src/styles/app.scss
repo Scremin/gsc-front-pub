@@ -1,0 +1,36 @@
+@font-face {
+    font-family: myFonts;
+    src: url('./../assets/fonts/Mukta-Medium.ttf');
+}
+
+.box_appx {
+    display: flex;
+
+    font-family: myFonts;
+    //font-family: 'Mukta', sans-serif;
+
+    //border: 1px solid red;
+}
+.box_appx .box_overlay {
+    display: flex;
+    //border: 1px solid red;
+}
+.box_appx .box_overlay .btn_overlay {
+    display: flex;
+    max-width:180px;
+    //border: 1px solid rgb(55, 0, 255);
+}
+.box_appx .box_overlay .btn_overlay .box_img_overlay {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    //border: 1px solid red;
+}
+.box_appx .box_overlay .btn_overlay .box_img_overlay .el_img_overlay {
+    display: flex;
+    //border: 1px solid red;
+}
+.box_appx .box_overlay .btn_overlay .box_txt_overlay {
+    display: flex;
+    //border: 1px solid red;
+}

@@ -1,0 +1,123 @@
+.box_el_quemSomos {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+    padding: 5px;
+    margin: 4px;
+    width: 90%;
+
+    //border: 1px solid red;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.2);
+}
+
+/* VERSÃO ELEMENTO QUEM SOMOS LARGE */
+.box_el_quemSomos .img_el_quem_somos_L {
+    display: flex;
+    margin: 10px;
+    border-radius: 50px;
+    box-shadow: 2px 6px 8px black;
+    //border: 1px solid red;
+}
+.box_el_quemSomos .txt_el_quem_somos_L {
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 60%;
+
+    border-radius: 4px;
+    //box-shadow: 0px 2px 4px black;
+    //border: 1px solid red;
+    background: rgba(255,255,255,0.25);
+}
+.box_el_quemSomos .txt_el_quem_somos_L .tit_txt_el_quem_somos_L {
+    display: flex;
+    justify-content: center;
+
+    height: 10%;
+    margin: 4px;
+    padding: 4px;
+
+    font-size: large;
+    font-weight: bold;
+    color: rgb(17, 59, 57);
+
+    border-radius: 4px;
+    //border: 1px solid red;
+    background: rgba(255,255,255,0.5);
+}
+.box_el_quemSomos .txt_el_quem_somos_L .body_txt_el_quem_somos_L {
+    display: flex;
+    justify-content: center;
+
+    height: 80%;
+    margin: 4px;
+    padding: 4px;
+
+    //font-size: large;
+    //font-weight: bold;
+    //color: rgb(17, 59, 57);
+
+    //border: 1px solid red;
+    //background: rgba(255,255,255,0.5);
+}
+
+/* VERSÃO ELEMENTO QUEM SOMOS small */
+.box_el_quemSomos .img_el_quem_somos_S {
+    display: flex;
+    align-self: center;
+    margin: 10px;
+    border-radius: 50px;
+    box-shadow: 2px 6px 8px black;
+    //border: 1px solid red;
+}
+.box_el_quemSomos .txt_el_quem_somos_S {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+
+    margin: 10px;
+    //min-height: 800px;
+
+    border-radius: 4px;
+    //box-shadow: 0px 2px 4px black;
+    //border: 1px solid red;
+    background: rgba(255,255,255,0.25);
+}
+.box_el_quemSomos .txt_el_quem_somos_S .tit_txt_el_quem_somos_S {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 5%;
+    min-height: 60px;
+    margin: 4px;
+    padding: 4px;
+
+    font-size: large;
+    font-weight: bold;
+    color: rgb(17, 59, 57);
+
+    border-radius: 4px;
+    //border: 1px solid red;
+    background: rgba(255,255,255,0.5);
+}
+.box_el_quemSomos .txt_el_quem_somos_S .body_txt_el_quem_somos_S {
+    display: flex;
+    justify-content: center;
+
+    height: 95%;
+    margin: 4px;
+    padding: 4px;
+
+    font-size: small;
+    //font-weight: bold;
+    //color: rgb(17, 59, 57);
+
+    //border: 1px solid red;
+    //background: rgba(255,255,255,0.5);
+}

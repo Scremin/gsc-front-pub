@@ -1,0 +1,33 @@
+.box_painelConhSup {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    width:80%;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.2);
+    //border: 1px solid blue;
+}
+.box_painelConhSup .tit_painelConhSup {
+    display: flex;
+
+    margin: 10px;
+
+    font-size: 2.2rem;
+    font-weight: 800;
+    //color: rgba(121, 174, 64, 1);
+    color: rgb(17, 59, 57);
+
+    //border: 1px solid blue;
+}
+.box_painelConhSup .tit_painelConhSup_s {
+    display: flex;
+
+    margin: 4px;
+
+    font-size: 1.2rem;
+    font-weight: 800;
+    //color: rgba(121, 174, 64, 1);
+    color: rgb(17, 59, 57);
+
+    //border: 1px solid blue;
+}

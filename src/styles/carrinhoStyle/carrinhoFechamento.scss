@@ -1,0 +1,33 @@
+.box_carrinhoFechamento {
+    display: flex;
+    flex-direction: column;
+
+    padding: 4px;
+
+    //border: 1px solid red;
+}
+.box_carrinhoFechamento .fechamentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: rgb(17, 59, 57);
+    
+    margin-bottom: 20px;
+
+    //border: 1px solid red;
+}
+.box_carrinhoFechamento .fechamentos .valorTotalCarrinho {
+    display: flex;
+
+    //border: 1px solid red;
+}
+.box_carrinhoFechamento .msgs_erros_fechamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 4px;
+
+    //border: 1px solid red;
+}

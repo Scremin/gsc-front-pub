@@ -1,0 +1,122 @@
+.box_payAndClientCarrinho {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+
+    //border: 1px solid blue;
+}
+.box_payAndClientCarrinho .painel_resumoPagamento {
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px;
+
+    //border: 1px solid blue;
+}
+.box_payAndClientCarrinho .painel_resumoPagamento .painel_clientCarrinho {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+    margin: 10px;
+
+    border-radius: 18px;
+
+    box-shadow: 0px 2px 4px rgba(1,1,1,1);
+    background: rgba(255,255,255,0.4);
+    //border: 1px solid blue;
+}
+.box_payAndClientCarrinho .painel_resumoPagamento .painel_clientCarrinho .tit_painelCarrinhoC {
+    display: flex;
+    align-self: center;
+
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(17, 59, 57);
+
+    //border: 1px solid blue;
+}
+.box_payAndClientCarrinho .painel_resumoPagamento .painel_clientCarrinho .tx_user_adress_fone {
+    display: flex;
+
+    font-weight: 300;
+    color: rgba(121, 174, 64);
+
+    //border: 1px solid blue;
+}
+.box_payAndClientCarrinho .painel_resumoPagamento .resumoPedidoCarrinho {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+    margin: 10px;
+
+    border-radius: 18px;
+
+    box-shadow: 0px 2px 4px rgba(1,1,1,1);
+    background: rgba(255,255,255,0.4);
+    //border: 1px solid blue;
+}
+.box_payAndClientCarrinho .painel_resumoPagamento .resumoPedidoCarrinho .tit_painelCarrinhoC {
+    display: flex;
+    align-self: center;
+
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(17, 59, 57);
+
+    //border: 1px solid blue;
+}
+.box_payAndClientCarrinho .painel_resumoPagamento .resumoPedidoCarrinho .tx_resumoPedidoLineA {
+    display: flex;
+    justify-content: space-between;
+
+    color: rgb(17, 59, 57);
+
+    //border: 1px solid blue;
+}
+.box_payAndClientCarrinho .painel_resumoPagamento .resumoPedidoCarrinho .tx_resumoPedidoLineB {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 8px;
+
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: rgb(17, 59, 57);
+
+    //border: 1px solid blue;
+}
+
+.box_payAndClientCarrinho .painel_payCarrinho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px;
+
+    border-radius: 18px;
+
+    box-shadow: 0px 2px 4px rgba(1,1,1,1);
+    background: rgba(255,255,255,0.4);
+    //border: 1px solid blue;
+}
+.box_payAndClientCarrinho .painel_payCarrinho .divTitCarrinhoC {
+    display: flex;
+    flex-direction: column;
+
+    //border: 1px solid blue;
+}
+.box_payAndClientCarrinho .painel_payCarrinho .divTitCarrinhoC .tit_painelCarrinhoC {
+    display: flex;
+    align-self: center;
+
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(17, 59, 57);
+
+    //border: 1px solid blue;
+}

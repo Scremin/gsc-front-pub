@@ -1,0 +1,16 @@
+.box_videoHome {
+    display: flex;  
+    
+    margin-top: 200px; /* compensação menu fixed */
+
+    background: black;
+    box-shadow: 10px 0px 6px rgba(1, 1, 1, 1);
+    //border: 1px solid red;
+}
+.box_videoHome .elem_video_int {
+    display: flex;
+
+    width: 100%;
+
+    //border: 1px solid red;
+}

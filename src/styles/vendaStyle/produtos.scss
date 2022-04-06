@@ -1,0 +1,28 @@
+.box_produtos {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    //border: 1px solid red;
+    background: linear-gradient(1deg, rgb(255, 255, 255), rgb(23, 188, 140), rgb(255, 255, 255));
+}
+.box_produtos .tit_categProd {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    width: 90%;
+    padding: 20px;
+    margin-top: 180px;
+    margin-bottom: 50px;
+
+    font-size: 3rem;
+    font-weight: 800;
+    //color: rgba(121, 174, 64, 1);
+    color: rgb(17, 59, 57);
+    border-radius: 8px;
+
+    background: rgba(255,255,255,0.2);
+    //border: 1px solid red;
+}

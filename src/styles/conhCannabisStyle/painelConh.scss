@@ -1,0 +1,11 @@
+.box_painelConh {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 6px; /* a compensação do menu principal do app é compensanda pelo painelConhSup */
+    margin-bottom: 100px;
+    width:80%;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.2);
+    //border: 1px solid blue;
+}

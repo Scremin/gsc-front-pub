@@ -1,0 +1,41 @@
+.box_menuDropAfter {
+    display: flex;
+    //align-self: center;
+
+    position: fixed;
+    z-index: 1;
+
+    width: 20%;
+    padding: 4px;
+
+    margin-top: 115px;
+    margin-left: 140px;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.7);
+    //border: 1px solid red;
+}
+.box_menuDropAfter .colunaDropada {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 10px;
+
+    //border: 1px solid rgb(68, 42, 42);
+}
+.box_menuDropAfter .colunaDropada .elColunaDropada {
+    display: flex;
+    
+    cursor: pointer;
+
+    //border: 1px solid rgb(68, 42, 42);
+}
+
+.shadowElTxtMenuDrop:hover {
+    color: rgba(121, 174, 64, 1);
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+}

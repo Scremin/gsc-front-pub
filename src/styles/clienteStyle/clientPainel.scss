@@ -1,0 +1,129 @@
+.box_clientPainel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10px;
+
+    //border: 1px solid red;
+}
+
+/* BTN DELETE PAINEL CLIENT */
+.box_clientPainel .btn_delete_painelClient {
+    display: flex;
+
+    //border: 1px solid red;
+}
+
+/* PAINEL */
+.box_clientPainel .box_pedidoClientView {
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+    //margin: 20px;
+
+    border-radius: 4px;
+
+    //background: rgba(1,1,1,0.7);
+    background: rgba(255,255,255,0.4);
+    box-shadow: 0px 2px 4px rgb(1,1,1);
+    //border: 1px solid red;
+}
+.box_clientPainel .box_pedidoClientView .box_el_pedido {
+    display: flex;
+
+    min-height: 70px;
+
+    //border: 1px solid red;
+}
+.box_clientPainel .box_pedidoClientView .box_el_pedido .marcador_Clientpedido {
+    display: flex;
+
+    width: 2%;
+    margin: 4px;
+
+    //border: 1px solid red;
+}
+.box_clientPainel .box_pedidoClientView .box_el_pedido .painel_Clientpedido {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 10px;
+
+    width: 78%;
+
+    //border: 1px solid red;
+}
+.box_clientPainel 
+.box_pedidoClientView 
+.box_el_pedido 
+.painel_Clientpedido
+.el_painel_Clientpedido {
+    display: flex;
+
+    margin: 6px;
+    font-size: 0.8rem;
+
+    //border: 1px solid red;
+}
+.box_clientPainel .box_pedidoClientView .box_el_pedido .status_Clientpedido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30%;
+    //padding: 2px;
+    color: rgb(204, 22, 22);
+    font-weight: bold;
+
+    //border: 1px solid red;
+}
+
+/* INFO PAGAMENTO */
+.box_clientPainel .box_pedidoClientView .box_clientPay {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 4px;
+    //color: rgba(121, 174, 64, 1);
+    color: rgb(17, 59, 57);
+
+    background: rgba(255,255,255,0.1);
+    //border: 1px solid red;
+}
+.box_clientPainel .box_pedidoClientView .box_clientPay .clientInfoPay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0.8;
+
+    //border: 1px solid red;
+}
+.box_clientPainel .box_pedidoClientView .box_clientPay .imgPay_input {
+    display: flex;
+
+    font-size: 0.7rem;
+
+    margin-bottom: 4px;
+
+    //border: 1px solid red;
+}
+
+/* CHAT */
+.box_clientPainel .box_pedidoClientView .box_clientChat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    //border: 1px solid red;
+}
+.box_clientPainel .box_pedidoClientView .box_clientChat .msg_chat {
+    display: flex;
+    
+    margin: 4px;
+    color: red;
+
+    //border: 1px solid red;
+}

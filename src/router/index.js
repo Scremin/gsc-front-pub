@@ -1,98 +1,123 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import MainFront from '../components/MainFront.vue'
-import FaqGsc from '../components/FaqGsc.vue'
-import CategoriasPage from '../components/CategoriasPage.vue'
-import QuemSomos from '../components/QuemSomos.vue'
-import SaibaMais from '../components/SaibaMais.vue'
-import Carrinho from '../components/Carrinho.vue'
-import FinalPedido from '../components/FinalPedido.vue'
-import ProdutoPage from '../components/ProdutoPage.vue'
-import DescricProd from '../components/DescricProd.vue'
-import RcvCarousel from '../components/RcvCarousel.vue'
-import ClientMain from '../components/ClientMain.vue'
 
-import Termos from '../components/Termos.vue'
-//import AddProdCateg from '../components/AddProdCateg.vue'
+import Home from '@/components/home/Home.vue'
+import DivulgacaoCarousel from '@/components/home/DivulgacaoCarousel.vue'
+import ClientHome from '@/components/cliente/ClientHome.vue'
+
+import QuemSomos from '@/components/quemSomos/QuemSomos.vue'
+import ConhCannabis from '@/components/conhCannabis/ConhCannabis.vue'
+
+import Categorias from '@/components/venda/Categorias.vue'
+import Produtos from '@/components/venda/Produtos.vue'
+import DescricaoProduto from '@/components/venda/DescricaoProduto.vue'
+
+import Carrinho from '@/components/carrinho/Carrinho.vue'
+import CarrinhoPageB from '@/components/carrinho/CarrinhoPageB.vue'
+import CarrinhoPageC from '@/components/carrinho/CarrinhoPageC.vue'
+import CarrinhoPageD from '@/components/carrinho/CarrinhoPageD.vue'
+
+import store from '@/store/index.js'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'MainFront',
-    component: MainFront
+    name: 'Home',
+    component: Home
   },
   {
-    path: '/faq',
-    name: 'Faq',
-    component: FaqGsc
+    path: '/divulg',
+    name: 'DivulgacaoCarousel',
+    component: DivulgacaoCarousel
   },
   {
-    path: '/MaisInformações',
-    name: 'RcvCarousel',
-    component: RcvCarousel
+    path: '/clienthome',
+    name: 'ClientHome',
+    component: ClientHome
   },
   {
-    path: '/MinhaGreen',
-    name: 'ClientMain',
-    component: ClientMain
-  },
-  {
-    path: '/MinhasCompras',
-    name: 'CategoriasPage',
-    component: CategoriasPage
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    //component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  },
-  {
-    path: '/QuemSomos',
+    path: '/quemsomos',
     name: 'QuemSomos',
     component: QuemSomos
   },
   {
-    path: '/SaibaMais',
-    name: 'SaibaMais',
-    component: SaibaMais
+    path: '/conhCannabis',
+    name: 'ConhCannabis',
+    component: ConhCannabis
   },
   {
-    path: '/Carrinho',
+    path: '/categorias',
+    name: 'Categorias',
+    component: Categorias
+  },
+  {
+    path: '/produtos',
+    name: 'Produtos',
+    component: Produtos
+  },
+  {
+    path: '/descricao',
+    name: 'DescricaoProduto',
+    component: DescricaoProduto
+  },
+  {
+    path: '/carrinho',
     name: 'Carrinho',
     component: Carrinho
   },
   {
-    path: '/ProdutoPage',
-    name: 'ProdutoPage',
-    component: ProdutoPage
+    path: '/fechamento',
+    name: 'CarrinhoPageB',
+    component: CarrinhoPageB
   },
   {
-    path: '/DescricaoDoProduto',
-    name: 'DescricProd',
-    component: DescricProd
+    path: '/fechamentoC',
+    name: 'CarrinhoPageC',
+    component: CarrinhoPageC
   },
   {
-    path: '/FinalPedido',
-    name: 'FinalPedido',
-    component: FinalPedido
+    path: '/fechamentoD',
+    name: 'CarrinhoPageD',
+    component: CarrinhoPageD
   },
-  /*{
-    path: '/AddProdCateg',
-    name: 'AddProdCateg',
-    component: AddProdCateg
-  },*/
   {
-    path: '/exibtermosepoliticas',
-    name: 'Termos',
-    component: Termos
-  },
+    path: '/about',
+    name: 'About',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  }
 ]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+
+/* Antes de cada navegação a função é chamada */
+router.beforeEach((to, from , next) => {
+
+  //console.log('Em rota...')
+
+  if(to.path == '/') {
+                
+    store.state.authForShow = true
+  }
+  else{
+
+    store.state.authForShow = false // se não estiver => auth blocked
+  }
+
+  //console.log('Estou na home:', store.state.authForShow)
+  
+  store.commit('updateCartList') // sem param
+
+  next() // sem a chamada next() a rota é travada.
+
 })
 
 export default router
