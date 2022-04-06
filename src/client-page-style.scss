@@ -1,0 +1,130 @@
+@font-face {
+
+    font-family: tx;
+    src: url('./assets/fonts/Solway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+
+    font-family: Destaque;
+    src: url('./assets/fonts/Frijole-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.c_m {
+    display: flex;
+
+    min-height: 600px;
+    margin-bottom: 1%;
+    font-family: tx;
+
+    //border: 2px solid red;
+}
+
+/* Ajuste de 80% de largura com o component principal */
+.c_m .elem_esq {
+    display: flex;
+    //flex-direction: column;
+
+    width: 100%;
+
+    //border: 2px solid rgb(14, 17, 17);
+}
+
+.c_m .elem_lat_aux {
+    display: flex;
+
+    width: 10%;
+
+    //border: 2px solid rgb(60, 223, 223);
+}
+
+/* ELEMENTO BACKGROUND - DENTRO DA LATERAL DIREITA */
+.c_m .elem_lat_aux .tx_back {
+    display: flex;
+
+    height: 40%;
+    width: 300px;
+
+    //margin-bottom: -2%;
+    //margin-right: -100%; /* AJUSTE NO FRONT. */
+    margin-top: 200%;
+    margin-right: 5%;
+
+    opacity: 0.1;
+    transform-origin: center;
+    position: relative;
+
+    font-size: 7rem;
+    font-weight: 900;
+
+    font-family: tx;
+
+    //border: solid 2px blue;
+}
+
+/* ELEMENTO CENTRAL */
+.c_m .elem_central_client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    margin-bottom: 20%;
+
+    //border: 2px solid rgb(14, 17, 17);
+}
+/* bool para a edição do cadastro do cliente */
+.c_m .elem_central_client .box_edit_cadastro {
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    height: 80%;
+    padding: 2%;
+    border-radius: 8px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.65);
+    //border: 2px solid rgb(20, 80, 80);
+}
+.c_m .elem_central_client .box_edit_cadastro .input_elem {
+    display: flex;
+
+    width: 98%;
+    height: 20%;
+    padding: 2%;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    margin: 1%;
+
+    box-shadow: 0 2px 10px rgb(168, 243, 15);
+    //border: 2px solid rgb(8, 20, 20);
+}
+
+/* bool para visualização dos pedidos */
+.c_m .elem_central_client .box_view_pdds {
+    display: flex;
+    //flex-direction: column;
+    align-self: flex-start;
+
+    width: 700px;
+    //width: 100%;
+
+    //height: 20%;
+    padding: 1%;
+    margin-top: 10%;
+    border-radius: 8px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.65);
+    border: 2px solid rgb(20, 80, 80);
+}
+
+.c_m .elem_central_client .box_view_pdds .prods_int {
+    display: flex;
+    
+    margin: 1%;
+    border: 1px solid red;
+}

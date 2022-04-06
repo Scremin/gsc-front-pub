@@ -1,0 +1,56 @@
+@font-face {
+
+    font-family: myFonts;
+    src: url('./assets/fonts/Solway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.allMainMenu {
+    display: flex;
+    flex-direction: column;
+
+    //height: 20%;
+    width: 100%;
+
+    font-family: myFonts;
+
+    //border: solid 2px blue;
+}
+
+/* PARTE CIMA */
+.allMainMenu .encaixeSup {
+    display: flex;
+
+    height: 220px;
+    width: 100%;
+
+    //border: solid 2px red;
+}
+
+/* PARTE BAIXA */
+.allMainMenu .encaixeInf {
+    display: flex;
+
+    height: 200px; /* ENCAIXE */
+    width: 100%;
+
+    /*@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+    font-family: 'Frijole';*/
+
+    font-weight: bold;
+
+    //position: fixed; /* BLOQUEAR SCROLL */
+    //overflow: hidden;
+
+    //border: solid 2px blue;
+}
+
+/* ANIMAÇÕES */ /* Classes repetidas separadas por vírgula */
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 2s;
+}

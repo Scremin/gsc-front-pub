@@ -1,0 +1,93 @@
+.main_rcv_carousel {
+    display: flex;
+
+    //height: 600px;
+
+    //border: 2px solid red;
+}
+
+/* LADO DIREITO ficou mesmo invertido */
+.main_rcv_carousel .lado_esquerdo {
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-around;
+
+    width: 50%;
+
+    //border: 2px solid red;
+}
+
+.main_rcv_carousel .lado_esquerdo .sup {
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    //height: 20%;
+    width: 100%;
+    margin-top: 10%;
+
+    font-size: 1.6rem;
+    color: rgb(168, 243, 15);
+    font-weight: bold;
+
+    //border: 2px solid red;
+}
+
+.main_rcv_carousel .lado_esquerdo .inf {
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+
+    min-height: 500px;
+    width: 90%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+
+    //border: 2px solid blue;
+}
+
+.main_rcv_carousel .lado_esquerdo .inf .p_tx {
+    display: flex;
+    //justify-content: center;
+
+    width: 98%;
+    //height: 32%;
+    margin: 1%;
+    padding: 1%;
+
+    border-radius: 18px;
+    //box-shadow: 0 2px 80px rgba(121, 174, 64, 1);
+
+    //border: 2px solid blue;
+}
+
+/* LADO ESQUERDO */
+.main_rcv_carousel .lado_direito {
+    display: flex;
+
+    width: 50%;
+    height: 600px;
+
+    //border: 2px solid pink;
+}
+
+.main_rcv_carousel .lado_direito .ft_ext {
+    display: flex;
+
+    margin: 2%;
+    width: 98%;
+    border-radius: 190px;
+
+    background-color: black;
+
+    box-shadow: 0 2px 80px rgba(121, 174, 64, 1);
+
+    //border: 2px solid blue;
+}
+
+.txHover:hover {
+
+    box-shadow: 10px 20px 80px rgba(121, 174, 64, 1);
+}

@@ -1,0 +1,135 @@
+@font-face {
+
+    font-family: tx;
+    src: url('./assets/fonts/Solway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.main_linit {
+    display: flex;
+    //align-items: center;
+
+    //padding: 1%;
+
+    //width: 100%;
+    min-height: 600px;
+
+    font-family: tx;
+
+    //border: 2px solid red;
+}
+
+.main_linit .elem_lat {
+    display: flex;
+
+    width: 25%;
+
+    //border: 2px solid pink;
+}
+
+.main_linit .elem_central {
+    display: flex;
+
+    width: 80%;
+    height: 90%;
+    margin-top: 5%;
+
+    //border: 2px solid blue;
+}
+
+/* posicionamento central */
+.main_linit .elem_central .content_central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    //border: 2px solid red;
+}
+
+
+/* imagem */
+.main_linit .elem_central .content_central .img_central {
+    display: flex;
+    justify-content: center;
+
+    width: 150px;
+    height: 150px;
+    margin: 2%;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+    //border: 2px solid red;
+}
+
+/* formulario */
+.main_linit .elem_central .content_central .form_posi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+
+    //border: 1px solid red;
+}
+
+/* formulario final */
+.main_linit .elem_central .content_central .form_posi_final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-bottom: 10px;
+
+    //border: 1px solid red;
+}
+.main_linit .elem_central .content_central .form_posi_final .form_posi_int {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 2%;
+
+    margin-bottom: 10px;
+
+    //border: 1px solid yellow;
+}
+
+/* linhas de input */
+.main_linit .elem_central .content_central .form_posi .input_edit_line {
+    display: flex;
+
+    height: 50px;
+    width: 225px; /*300px*/
+    padding: 4%;
+    margin: 4%;
+
+    font-size: 1rem;
+    border-radius: 18px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.65);
+    //border: 2px solid blue;
+}
+
+/* linhas de output response */
+.main_linit .elem_central .content_central .form_posi .output_line {
+    display: flex;
+    //justify-content: center;
+
+    margin: 2%;
+
+    width: 220px;
+
+    font-size: 1rem;
+    color: red;
+
+    //border: 2px solid blue;
+}

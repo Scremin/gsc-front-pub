@@ -1,0 +1,43 @@
+.main-saiba-peq {
+    display: flex;
+
+    //border: 1px red solid;
+}
+
+.main-saiba-peq .box-to-for-elems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    //border: 1px rgb(22, 9, 9) solid;
+}
+
+.main-saiba-peq .box-to-for-elems .elem-circle {
+    display: flex;
+    flex-direction: column;
+
+    width: 160px;
+    height: 160px;
+    margin: 4%;
+    margin-bottom: 10%;
+
+    //border: 1px rgb(81, 255, 0) solid;
+}
+
+.main-saiba-peq .box-to-for-elems .elem-circle .txt-inside {
+    display: flex;
+    justify-content: center;
+
+    color: rgb(73, 104, 10);
+
+    //border: 1px rgb(255, 0, 200) solid;
+}
+
+.txHover:hover {
+
+    min-height: 180px;
+
+    //border: 1px solid red;
+
+    box-shadow: 10px 20px 80px rgb(10, 36, 34);
+}

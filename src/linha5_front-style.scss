@@ -1,0 +1,80 @@
+@font-face {
+
+    font-family: tx;
+    src: url('./assets/fonts/Solway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+
+    font-family: Destaque;
+    src: url('./assets/fonts/Frijole-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* LINHA 1 */
+.linha1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  //position: absolute;
+
+  width: 100%;
+  padding: 1%;
+
+  margin-bottom: 2%;
+
+  //border: solid 2px blue;
+}
+
+.linha1 .elemLinha1 {
+  display: flex;
+
+  font-family: tx;
+  font-size: 2rem;
+  font-weight: 900;
+
+  cursor: pointer;
+
+  color:rgb(12, 41, 39);
+
+  //border: solid 2px gray;
+}
+
+.main_linha5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    //height: 500px;
+
+    margin-top: 10%;
+
+    //border: 1px solid red;
+}
+
+.main_linha5 .main_titulo {
+    display: flex;
+
+    margin: 1%;
+
+    font-family: Destaque;
+    font-size: 2rem;
+    color: rgba(168, 243, 15, 1);
+
+    //border: 1px solid red;
+}
+
+.main_linha5 .expansion_panel-style {
+    display: flex;
+
+    margin: 1%;
+
+    font-family: tx;
+
+    //border: 1px solid purple;
+}

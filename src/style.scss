@@ -1,0 +1,82 @@
+/* App style */ /* Geral App */
+
+.config_tx {
+  font-family: tx;
+
+  //border: 1px solid red;
+}
+
+.config_tx .linha_check {
+  display: flex;
+
+  //width: 200px; /* apenas em small screen */
+  //margin-left: 20%; /* apenas em small screen */
+
+  //border: 1px solid red;
+}
+.config_tx .linha_check .elem_linha_check {
+  display: flex;
+
+  margin: 1%;
+
+  //border: 1px solid rgb(43, 255, 0);
+}
+.linha2_check {
+  display: flex;
+  flex-direction: column;
+
+  //border: 1px solid red;
+}
+.linha2_check .elem_linha2_check {
+  display: flex;
+
+  margin: 1%;
+
+  //border: 1px solid green;
+}
+
+.config_main {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  //height: 100%;
+  //height: 4000px;
+
+  //border: solid 2px purple;
+}
+
+/* MAIN PAGE */
+.config_main_page {
+  display: flex;
+
+  font-family: tx;
+
+  width: 100%;
+  //height: 100%;
+  height: 3500px;
+
+  background-color: rgb(255, 255, 255);
+
+  border: solid 2px purple;
+}
+
+/*#app {
+  font-family: myFonts;
+}
+
+@font-face {
+
+  font-family: myFonts;
+  src: url('./assets/fonts/Solway-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+@font-face {
+
+  font-family: tx;
+  src: url('./assets/fonts/Solway-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}

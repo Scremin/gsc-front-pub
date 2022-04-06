@@ -1,0 +1,196 @@
+@font-face {
+
+    font-family: tx;
+    src: url('./assets/fonts/Solway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+
+    font-family: Destaque;
+    src: url('./assets/fonts/Frijole-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.linha2_front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 15%;
+    margin-bottom: 16.05%;
+
+    //margin: 1%;
+    width: 100%;
+    height: 800px;
+    
+    //box-shadow: 10px 20px 50px rgb(12, 41, 39);
+    //background: linear-gradient(2deg, rgb(255, 255, 255), rgb(23, 188, 140),  rgb(255, 255, 255));
+    //border: solid 2px red;
+}
+
+/* LEFT */
+.linha2_front .elem1_linha2_front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+
+    width: 300px;
+    height: 80%;
+
+    //border: solid 2px green;
+}
+
+/* TÍTULO - QUEM SOMOS */
+.linha2_front .elem1_linha2_front .elem1_left {
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 20%;
+
+    font-family: Destaque;
+    color:rgb(12, 41, 39);
+
+    font-weight: 400;
+    font-size: 2rem;
+
+    //border: solid 2px gray;
+}
+
+.linha2_front .elem1_linha2_front .elem1_left .elem_left_int {
+    display: flex;
+
+    //border: solid 2px red;
+}
+
+/* TEXTO - QUEM SOMOS */
+.linha2_front .elem1_linha2_front .elem2_left {
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    font-weight: 400;
+    font-size: 1rem;
+
+    //border: solid 2px gray;
+}
+
+.linha2_front .elem1_linha2_front .elem2_left .elem2_left_int {
+    display: flex;
+
+    font-family: tx;
+    
+    //border: solid 2px red;
+}
+
+.linha2_front .elem1_linha2_front .elem2_left .elem1Background {
+    color: #313131;
+    font-size: 74px;
+    font-weight: 900;
+    opacity: 0.2;
+    transform-origin: center;
+
+    margin-top: 50%;
+    width: 900px;
+    //width: 80%;
+
+    font-family: Destaque;
+
+    //border: solid 2px red;
+}
+
+/* texto - QUEM SOMOS */
+.linha2_front .elem1_linha2_front .elem2_left {
+    display: flex;
+
+    //border: solid 1px gray; /* característoca do botão - com borda */
+}
+
+.linha2_front .elem1_linha2_front .elem2_left .elem2_left_int {
+    display: flex;
+
+    background-color: transparent !important;
+
+    //border: solid 1px red;
+}
+
+/* btn quem somos*/
+.style_btn {
+    font-family: tx;
+}
+
+/* CENTER*/
+.linha2_front .elem2_linha2_front {
+    display: flex;
+
+    width: 300px;
+    height: 60%;
+
+    //margin-left: -25%;
+    //margin-right: -25%;
+
+    //border: solid 2px green;
+}
+
+.linha2_front .elem2_linha2_front .elem1_center {
+    display: flex;
+    justify-content: center;
+
+    width: 30%;
+
+    //border: solid 2px red;
+}
+
+/* RIGHT */
+.linha2_front .elem3_linha2_front {
+    display: flex;
+
+    width: 300px;
+    height: 80%;
+
+    //border: solid 2px green;
+}
+
+.linha2_front .elem3_linha2_front .elem1_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    background-color: rgba(168,243,15);
+
+    //border: solid 2px gray;
+}
+
+.linha2_front .elem3_linha2_front .elem1_right .contentsRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 80%;
+    margin: 3%;
+
+    //border: solid 2px red;
+}
+
+.linha2_front .elem3_linha2_front .elem1_right .contentsRight .endTextRight {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    font-family: tx;
+
+    //border: solid 2px green;
+}

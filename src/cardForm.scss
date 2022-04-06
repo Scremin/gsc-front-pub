@@ -1,0 +1,184 @@
+@font-face {
+
+  font-family: tx;
+  src: url('./assets/fonts/Solway-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+
+  font-family: Destaque;
+  src: url('./assets/fonts/OtomanopeeOne-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Component Pág Produtos ----------------------------------------------------- */
+.products {
+    //border: solid 2px red;
+  
+    //height: 75%; /* 100% - (SupMenu) - (MainMenu) */ /* EM PRODUÇÃO */
+    height: 40%; /* Teste de conexão com o editor */
+  }
+
+  /* primeira linha, acima dos produtos, indicando o nome da categoria selecionada */
+  .panelAcimaProds {
+    display: flex;
+  
+    justify-content: flex-start; /* Ajuste de posicionamento dos cards panels */
+    margin-left: 4%;
+    //margin-top: -12%; /* margem para cobrir o texto de fundo*/
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    //border: solid 2px red;
+  }
+
+  .panelAcimaProds .panelAcimaProds_int {
+    display: flex;
+    justify-content: center;
+
+    width: 200px;
+
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.65);
+
+    font-family: tx;
+  
+    //border: solid 2px blue;
+  }
+
+  /* Component Pág Produtos */ /* Região de posicionamento dos "Cards" */
+  .panelProducts {
+    display: flex;
+
+    //margin-top: -1%; /* margem para cobrir o texto de fundo*/
+  
+    justify-content: center; /* Ajuste de posicionamento dos cards panels */
+    flex-wrap: wrap; /* Ajuste quebra de linha e espaçamento da região de cards panels */
+  
+    //border: solid 2px rgb(88, 61, 61);
+  }
+
+  .btn_panelProducts {
+    display: flex;
+
+    font-family: tx;
+  
+    justify-content: center; /* Ajuste de posicionamento do btn panel */
+ 
+    //border: solid 2px blue;
+  }
+
+  .btn_panelProducts .btn_posi {
+    display: flex;
+  
+    justify-content: center; /* Ajuste de posicionamento do btn panel */
+    align-content: right;
+ 
+    //border: solid 2px red;
+  }
+
+  .space_aux {
+    display: flex;
+
+    height: 40px;
+
+    //border: solid 2px blue;
+  }
+
+  /* Component Pág Produtos */ /* "Card" do produto */
+  .panelProducts .task-grid {
+    display: flex;
+  
+    justify-content: center; /* Ajuste de conteúdo interno ao card panel */
+    flex-wrap: wrap;  /* Ajuste quebra de linha e espaçamento interno ao card panel */
+    
+    margin: 1%;
+    width: 500px; /* a horizontal do card deve ser fixa, encaixando-se na responsividade */
+  
+    //border: solid 2px green; /* marcador de edição interna */
+  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.65);
+  }
+  
+  /* Conteúdo interno ao "Card" */
+  .panelProducts .task-grid .task-in {
+    display: flex;
+    flex-direction: column; /* cada elemento interior ao card tem a sua config do tipo coluna */
+  
+    justify-content: space-between; /* cada elemento interior ao card tem o seu conteúdo ao centro */
+  
+    width: 46%;
+    margin: 1%;
+  
+    //border: solid 1px blue; /* marcador de edição interna */
+  }
+  
+  /* Interior do Conteúdo à direita */
+  .panelProducts .task-grid .task-in .into-task {
+    display: flex;
+  
+    justify-content: center; /* cada elemento centralizado tem seu próprio interior ao centro */
+  
+    //border: solid 2px red; /* marcador de edição interna */
+  }
+  
+  /* Interior do 1º elemento à direita */ /* Título do produto */
+  .panelProducts .task-grid .task-in .into-task .primeiro-i-t {
+    display: flex;
+
+    font-family: tx;
+  
+    margin: 1%;
+  
+    font-size: 1.5rem;
+  
+    //border: solid 2px purple; /* marcador de edição interna */
+  }
+  
+  /* Interior do 2º elemento à direita */ /* Descrição do produto */
+  .panelProducts .task-grid .task-in .into-task .segundo-i-t {
+    display: flex;
+  
+    justify-content: left;
+    //flex-wrap: wrap;
+  
+    margin: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  
+    font-size: 1rem;
+
+    cursor: pointer;
+  
+    //border: solid 2px purple; /* marcador de edição interna */
+  }
+  
+  /* Interior do 3º elemento à direita */ /* Linha de preço e adesão */
+  .panelProducts .task-grid .task-in .into-task .terceiro-i-t {
+    display: flex;
+  
+    justify-content: center; /* cada elemento à esquerda tem seu próprio interior, centralizado */
+  
+    width: 48%;
+    margin: 1%;
+
+    font-family: tx;
+  
+    //border: solid 2px purple; /* marcador de edição interna */
+  }
+  
+  /* preço */
+  .panelProducts .task-grid .task-in .into-task .terceiro-i-t .preco {
+    display: flex;
+  
+    justify-content: center; /* cada elemento à esquerda tem seu próprio interior, centralizado */
+  
+    height: 90%;
+    width: 90%;
+    margin-top: 4%;
+  
+    //border: solid 2px purple; /* marcador de edição interna */
+  }

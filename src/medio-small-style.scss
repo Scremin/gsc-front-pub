@@ -1,0 +1,39 @@
+@font-face {
+
+    font-family: tx;
+    src: url('./assets/fonts/Solway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+
+    font-family: Destaque;
+    src: url('./assets/fonts/OtomanopeeOne-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.main-medio-small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 400px;
+
+    //border: 1px solid red;
+}
+
+.main-medio-small .elem_tx_central {
+    display: flex;
+    
+    margin: 2%;
+
+    color: rgb(133, 194, 12);
+    font-size: 1.6rem;
+    font-weight: bold;
+  
+    font-family: tx;
+
+    //border: 1px solid black;
+}

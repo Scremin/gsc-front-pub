@@ -1,0 +1,155 @@
+/* Encaixe com o menu drop - main menu gsc */
+
+.main_encaixe {
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+  
+    //border: solid 2px red;
+  }
+
+  .main_encaixe .main_linha {
+    display: flex;
+
+    height: 100%;
+    width: 70%;
+
+    margin-left: 4%;
+    //margin: 1%;
+  
+    //border: solid 2px orange;
+  }
+
+  /* COLUNA 1 */
+  .main_encaixe .main_linha .col_encaixe {
+    display: flex;
+    flex-direction: column;
+
+    //height: 100%;
+    width: 30%;
+
+    margin-right: 5%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+
+    cursor: pointer;
+  
+    //border: solid 2px blue;
+  }
+
+  .main_encaixe .main_linha .col_encaixe .elem1_col {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+
+    height: 13%;
+    width: 100%;
+    margin-bottom: 2%;
+  
+    //border: solid 2px red;
+  }
+
+  .main_encaixe .main_linha .col_encaixe .elem1_col .elem1_col_int {
+    display: flex;
+
+    width: 100%;
+
+    font-size: 1rem;
+  
+    //border: solid 2px PURPLE;
+  }
+
+  .main_encaixe .main_linha .col_encaixe .elem2_col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 10%;
+    width: 100%;
+  
+    //border: solid 2px red;
+  }
+
+  .main_encaixe .main_linha .col_encaixe .elem2_col .elem2_col_int {
+    display: flex;
+
+    width: 100%;
+
+    font-size: 0.8rem;
+  
+    //border: solid 2px PURPLE;
+  }
+
+  /* COLUNA 2 */
+  .main_encaixe .main_linha .col2_encaixe {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    width: 25%;
+
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+
+    cursor: pointer;
+  
+    //border: solid 2px blue;
+  }
+
+  .main_encaixe .main_linha .col2_encaixe .elem1_col2 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    height: 10%;
+    width: 100%;
+  
+    //border: solid 2px red;
+  }
+
+  .main_encaixe .main_linha .col2_encaixe .elem1_col2 .elem1_col2_int {
+    display: flex;
+
+    width: 100%;
+
+    font-size: 1rem;
+  
+    //border: solid 2px PURPLE;
+  }
+
+  .main_encaixe .main_linha .col2_encaixe .elem2_col2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 15%;
+    width: 100%;
+  
+    //border: solid 2px red;
+  }
+
+  .main_encaixe .main_linha .col2_encaixe .elem2_col2 .elem2_col2_int {
+    display: flex;
+
+    width: 100%;
+
+    font-size: 0.8rem;
+  
+    //border: solid 2px PURPLE;
+  }
+
+  /* HOVER BTNs DO MENU */
+  .active {
+    color: rgba(121, 174, 64, 1);
+  }
+
+  /* HOVER BTNs DO MENU */
+  .luzHover:hover {
+
+    color: rgba(121, 174, 64, 1);
+    //max-height: 450px;
+    //max-width: 550px;
+
+  }

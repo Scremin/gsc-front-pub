@@ -1,0 +1,245 @@
+@font-face {
+
+    font-family: tx;
+    src: url('./assets/fonts/Solway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+
+    font-family: Destaque;
+    src: url('./assets/fonts/Frijole-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.backFooter {
+    display: flex;
+
+    //height: 330px;
+
+    font-family: tx;
+
+    box-shadow: 10px 10px 100px rgba(168,243,15);
+    //border: solid 2px red;
+}
+
+/* TAMANHO LARGE */
+.backFooter .footer {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    
+    width: 100%;
+
+    //border: solid 2px rgb(247, 0, 0);
+}
+
+/* COLUNA 1 hidden-sm-and-down */
+.backFooter .footer .col1 {
+    display: flex;
+    //flex-direction: column;
+
+    width: 40%;
+    //margin-left: 10%;
+
+    //border: solid 2px pink;
+}
+
+.backFooter .footer .col1 .p1 {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    //border: solid 2px rgb(75, 70, 70);
+}
+
+.backFooter .footer .col1 .p1 .elemFooter {
+    display: flex;
+    //justify-content: center;
+
+    //width: 100%;
+
+    //border: solid 2px green;
+}
+
+.backFooter .footer .col1 .p1 .elemFooterInt {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    //border: solid 2px red;
+}
+
+.backFooter .footer .col1 .p1 .elemFooterInt .textEnd {
+    display: flex;
+
+    margin: 1%;
+    width: 90%;
+    //color: rgba(121, 174, 64, 1);
+    cursor: pointer;
+
+    //border: solid 2px gray;
+}
+
+/* COLUNA 2 hidden-sm-and-down */
+.backFooter .footer .col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 40%;
+
+    margin-right: 6%;
+
+    //border: solid 2px pink;
+}
+
+.backFooter .footer .col2 .elemFooter {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    margin: 1%;
+
+    //border: solid 2px green;
+}
+
+.backFooter .footer .col2 .elemFooter .iconOne {
+    display: flex;
+
+    color: rgba(121, 174, 64, 1);
+
+    margin: 1%;
+    cursor: pointer;
+
+    //border: solid 2px gray;
+}
+
+.backFooter .footer .col2 .elemFooter .footers {
+    display: flex;
+
+    font-size: 2rem;
+
+    //border: solid 2px red;
+}
+
+/* TAMANHO SMALL ------------------------------------------------------------------------- */
+.backFooter .footer-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    
+    width: 100%;
+
+    //border: solid 2px rgb(247, 0, 0);
+}
+
+/* COLUNA 1 hidden-sm-and-down */
+.backFooter .footer-small .col1-small {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 5%;
+    width: 90%;
+    
+    border-radius: 8px;
+
+    background-color: rgb(70, 69, 69);
+    //border: solid 2px pink;
+}
+
+.backFooter .footer-small .col1-small .p1-small {
+    display: flex;
+    flex-direction: column;
+
+    //width: 100%;
+    margin: 2%;
+
+    //border: solid 2px rgb(75, 70, 70);
+}
+
+.backFooter .footer-small .col1-small .p1-small .elemFooter-small {
+    display: flex;
+
+    //width: 100%;
+
+    //border: solid 2px green;
+}
+
+.backFooter .footer-small .col1-small .p1-small .elemFooterInt-small {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+
+    width: 60%;
+
+    //border: solid 2px red;
+}
+
+.backFooter .footer-small .col1-small .p1-small .elemFooterInt-small .textEnd-small {
+    display: flex;
+
+    margin: 1%;
+    width: 90%;
+    //color: rgba(121, 174, 64, 1);
+    cursor: pointer;
+
+    //border: solid 2px gray;
+}
+
+/* COLUNA 2 hidden-sm-and-down */
+.backFooter .footer-small .col2-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 5%;
+    width: 100%;
+
+    //margin-right: 6%;
+
+    //border: solid 2px pink;
+}
+
+.backFooter .footer-small .col2-small .elemFooter-small {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    margin: 1%;
+
+    //border: solid 2px green;
+}
+
+.backFooter .footer-small .col2-small .elemFooter-small .iconOne-small {
+    display: flex;
+
+    color: rgba(121, 174, 64, 1);
+
+    margin: 1%;
+    cursor: pointer;
+
+    //border: solid 2px gray;
+}
+
+.backFooter .footer-small .col2-small .elemFooter-small .footers-small {
+    display: flex;
+
+    font-size: 2rem;
+
+    //border: solid 2px red;
+}
+
+/* HOVER*/
+/* HOVER BTNs DO MENU */
+.active {
+color: rgba(121, 174, 64, 1);
+}
