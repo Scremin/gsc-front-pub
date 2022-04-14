@@ -8,7 +8,7 @@
     <v-overlay
       class="box_overlay"
       :absolute="absolute"
-      :value="overlay"
+      :value="this.$store.state.statusOverLay"
     >
       <v-btn
         class="btn_overlay"
@@ -29,15 +29,15 @@
       </v-btn>
     </v-overlay>
 
-    <MenuMain v-if="overlay == false" />
+    <MenuMain v-if="this.$store.state.statusOverLay == false" />
 
-    <v-main v-if="overlay == false">
+    <v-main v-if="this.$store.state.statusOverLay == false">
       <router-view/>
     </v-main>
 
-    <ExtraLine v-if="overlay == false" />
+    <ExtraLine v-if="this.$store.state.statusOverLay == false" />
 
-    <Rodape v-if="overlay == false" />
+    <Rodape v-if="this.$store.state.statusOverLay == false" />
 
   </v-app>
 </template>
@@ -55,18 +55,18 @@ export default {
 
   data: () => ({
     absolute:true,
-    overlay:true, // init on overlay.
+    //overlay:true, // init on overlay.
   }),
   methods: {
     changeOverLay () {
 
-      this.overlay = false
-      this.$store.state.statusOverLay = this.overlay // desabilitar overlay e habilitar app.
+      //this.overlay = false
+      this.$store.state.statusOverLay = false // desabilitar overlay e habilitar app.
 
       var trafegoLocal = JSON.parse(localStorage.getItem('trafegoLocal'))
       var update_trafegoLocal = {
 
-          storedOverLay:this.$store.state.statusOverLay, // bool <--------- update
+          storedOverLay:false, // bool <------------------------------------ update
           storedUserLogado: trafegoLocal.storedUserLogado, // bool <-- hold
           storedDateUser: trafegoLocal.storedDateUser, // {} <-------- hold
           storedPddListUser: trafegoLocal.storedPddListUser, // [] <-- hold
@@ -75,6 +75,8 @@ export default {
           storedPddListGeral: trafegoLocal.storedPddListGeral // [] <- hold
       }
       localStorage.setItem('trafegoLocal', JSON.stringify(update_trafegoLocal))
+
+      console.log('update_trafegoLocal: ',update_trafegoLocal)
     }
   },
   mounted () {
@@ -87,30 +89,32 @@ export default {
   },
   created () {
 
-    this.overlay = this.$store.state.statusOverLay
+    //this.overlay = this.$store.state.statusOverLay
 
     // -- STORAGE
     var trafegoLocal = JSON.parse(localStorage.getItem('trafegoLocal'))
-    //console.log(trafegoLocal)
+    console.log(trafegoLocal)
     // ---- STORAGE INIT
     if (trafegoLocal == null) {
 
-        var update_trafegoLocal = {
+      var update_trafegoLocal = {
 
-            storedOverLay:this.$store.state.statusOverLay,
-            storedUserLogado: false, // bool <--- update
-            storedDateUser: {}, // {} <---------- update
-            storedPddListUser: [], // [] <------- update
-            storedCarrinho: [], // [] <---------- update
-            storageElemsCateg: {}, // {} <------- update (init from db)
-            storedPddListGeral: {} // [] <------- update (init from db)
-        }
+          storedUserLogado: false, // bool <--- update
+          storedDateUser: {}, // {} <---------- update
+          storedPddListUser: [], // [] <------- update
+          storedCarrinho: [], // [] <---------- update
+          storageElemsCateg: {}, // {} <------- update (init from db)
+          storedPddListGeral: {}, // [] <------- update (init from db)
+          storedOverLay:true,
+      }
 
-        localStorage.setItem('trafegoLocal', JSON.stringify(update_trafegoLocal))
+      localStorage.setItem('trafegoLocal', JSON.stringify(update_trafegoLocal))
 
     } else {
 
-      this.overlay = trafegoLocal.storedOverLay
+      //console.log('else - create')
+      //console.log(trafegoLocal)
+      this.$store.state.statusOverLay = trafegoLocal.storedOverLay
     
     }
   },

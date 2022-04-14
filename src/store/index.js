@@ -289,12 +289,13 @@ export default new Vuex.Store({
 
           var update_trafegoLocal = {
 
-              storedUserLogado: trafegoLocal.storedUserLogado, // bool <--hold
-              storedDateUser: trafegoLocal.storedDateUser, // {} <--------hold
-              storedPddListUser: trafegoLocal.storedPddListUser, // [] <--hold
-              storedCarrinho: trafegoLocal.storedCarrinho, // [] <--------hold
-              storageElemsCateg: res.data.result[0], // {} <--------------------- update (init from db)
-              storedPddListGeral: res.data.result[1] // [] <--------------------- update (init from db)
+            storedOverLay:trafegoLocal.storedOverLay,
+            storedUserLogado: trafegoLocal.storedUserLogado, // bool <--hold
+            storedDateUser: trafegoLocal.storedDateUser, // {} <--------hold
+            storedPddListUser: trafegoLocal.storedPddListUser, // [] <--hold
+            storedCarrinho: trafegoLocal.storedCarrinho, // [] <--------hold
+            storageElemsCateg: res.data.result[0], // {} <--------------------- update (init from db)
+            storedPddListGeral: res.data.result[1] // [] <--------------------- update (init from db)
           }
 
           localStorage.setItem('trafegoLocal', JSON.stringify(update_trafegoLocal))
@@ -384,9 +385,9 @@ export default new Vuex.Store({
 
       const self = this
       
-      axios.post(state.pathAxios, params).then(function (res) {
+      axios.post(state.pathAxiosObterStatusLoja, params).then(function (res) {
 
-          //console.log(res.data.result.statusLoja)
+          console.log(res.data.result.statusLoja)
           //console.log(res.data.result[0].tx_entrega_fora)
           
           self.state.statusLoja = res.data.result.statusLoja

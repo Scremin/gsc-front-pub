@@ -103,24 +103,24 @@ export default {
         window.scrollTo(0,0)
 
         // -- STORAGE
-        var trafegoLocal = JSON.parse(localStorage.getItem('trafegoLocal'))
+        /*var trafegoLocal = JSON.parse(localStorage.getItem('trafegoLocal'))
         //console.log(trafegoLocal)
         // ---- STORAGE INIT
         if (trafegoLocal == null) {
 
             var update_trafegoLocal = {
 
-                storedOverLay:this.$store.state.statusOverLay,
                 storedUserLogado: false, // bool <--- update
                 storedDateUser: {}, // {} <---------- update
                 storedPddListUser: [], // [] <------- update
                 storedCarrinho: [], // [] <---------- update
                 storageElemsCateg: {}, // {} <------- update (init from db)
-                storedPddListGeral: {} // [] <------- update (init from db)
+                storedPddListGeral: {}, // [] <------- update (init from db)
+                storedOverLay:true
             }
 
             localStorage.setItem('trafegoLocal', JSON.stringify(update_trafegoLocal))
-        }
+        }*/
     }
 }
 </script>

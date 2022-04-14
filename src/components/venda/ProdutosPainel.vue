@@ -368,6 +368,8 @@ export default {
 
         // pré-preenchimento das taxas de entrega.
         this.$store.commit('updatetxEntrega') // sem param GET Req.
+
+        //console.log('this.$store.state.statusLoja: ',this.$store.state.statusLoja)
     },
 
     created () {
