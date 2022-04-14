@@ -88,7 +88,7 @@ export default {
 
                 const self = this
 
-                axios.post($store.state.pathAxiosPostLogin,params).then(function (res) {
+                axios.post(self.$store.state.pathAxiosPostLogin,params).then(function (res) {
 
                     if (res.data.status == 'authok') {
 
