@@ -7,7 +7,26 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    pathAxios: `https://gsc-api.vercel.app/`,
+    //pathAxios: `https://gsc-api.vercel.app/`,
+
+    pathAxiosObterHome:`https://gsc--api.herokuapp.com/home`,
+
+    pathAxiosObterTxEntrega:`https://gsc--api.herokuapp.com/gettx`,
+    pathAxiosObterStatusLoja:`https://gsc--api.herokuapp.com/getstatusloja`,
+
+    pathAxiosMudarQntProd:`https://gsc--api.herokuapp.com/changeqntprod`,
+    pathAxiosPostElHis:`https://gsc--api.herokuapp.com/postelhiss`,
+    pathAxiosUpdatePddsUserDB:`https://gsc--api.herokuapp.com/postpdd`, // certeza de rota?
+    pathAxiosObterHis:`https://gsc--api.herokuapp.com/gethiss`,
+
+    pathAxiosObterPromo:`https://gsc--api.herokuapp.com/getpromo`,
+
+    pathAxiosObterPddsCl:`https://gsc--api.herokuapp.com/getpddscl`,
+    pathAxiosMudarStatusPdd:`https://gsc--api.herokuapp.com/poststatuspdd`,
+    pathAxiosAddComprovPay:`https://gsc--api.herokuapp.com/postincimgpdd`,
+    pathAxiosPostCadastro:`https://gsc--api.herokuapp.com/cadastro`,
+    pathAxiosPostLogin:`https://gsc--api.herokuapp.com/login`,
+    pathAxiosEditUser:`https://gsc--api.herokuapp.com/useredit`,
 
     // -- Operações gerais do app
     statusLoja:'off',
@@ -256,7 +275,7 @@ export default new Vuex.Store({
       const self = this
       
       //Posting the data converted to FormData using Axios to Flask.
-      axios.post(state.pathAxios, params).then(function (res) {
+      axios.post(state.pathAxiosObterHome, params).then(function (res) {
 
           //console.log(res)
 
@@ -296,7 +315,7 @@ export default new Vuex.Store({
 
     const self = this
     
-    axios.post(self.state.pathAxios, params).then(function (res) {
+    axios.post(self.state.pathAxiosObterTxEntrega, params).then(function (res) {
 
         //console.log(res.data.result[0].tx_entrega)
         //console.log(res.data.result[0].tx_entrega_fora)
@@ -385,7 +404,7 @@ export default new Vuex.Store({
 
       //const self = this
       
-      axios.post(state.pathAxios, params).then(function (res) {
+      axios.post(state.pathAxiosObterPddsCl, params).then(function (res) {
 
         //console.log(res.data.result)
         
@@ -418,7 +437,7 @@ export default new Vuex.Store({
 
       //const self = this
       
-      axios.post(state.pathAxios, params).then(function (res) {
+      axios.post(state.pathAxiosObterHis, params).then(function (res) {
 
           console.log(res.data.result)
 
@@ -455,7 +474,7 @@ export default new Vuex.Store({
         data:infoInsert /* POST request */
       }
     
-      axios.post(state.pathAxios, params).then(function () {
+      axios.post(state.pathAxiosUpdatePddsUserDB, params).then(function () {
           //console.log(res.data.result)
       })
     },
@@ -471,7 +490,7 @@ export default new Vuex.Store({
 
       //const self = this
       
-      axios.post(state.pathAxios, params).then(function (res) {
+      axios.post(state.pathAxiosMudarQntProd, params).then(function (res) {
 
           console.log(res.data.result)
       })
@@ -488,7 +507,7 @@ export default new Vuex.Store({
 
       //const self = this
       
-      axios.post(state.pathAxios, params).then(function (res) {
+      axios.post(state.pathAxiosPostElHis, params).then(function (res) {
 
           console.log(res.data.result)
       })

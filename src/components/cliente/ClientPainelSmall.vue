@@ -254,7 +254,7 @@ export default {
             
             const self = this
 
-            axios.post(self.$store.state.pathAxios, params).then(function (res) {
+            axios.post(self.$store.state.pathAxiosMudarStatusPdd, params).then(function (res) {
                 
                 console.log(res.data.result)
 
@@ -324,7 +324,7 @@ export default {
                 
                 const self = this
 
-                axios.post(self.$store.state.pathAxios, params).then(function (res) {
+                axios.post(self.$store.state.pathAxiosAddComprovPay, params).then(function (res) {
                     
                     console.log(res.data.result)
                 

@@ -191,7 +191,7 @@ export default {
 
         const self = this
         
-        axios.post(this.$store.state.pathAxios, params).then(function (res) {
+        axios.post(this.$store.state.pathAxiosObterPromo, params).then(function (res) {
 
             console.log(res.data.result)
 

@@ -76,7 +76,7 @@ export default {
     }},
 
     methods: {
-        mudarTaxa(tx, flagTx) {
+        mudarTaxa(tx, flagTx) { // local e store
 
             if(flagTx == 'covi') {
 

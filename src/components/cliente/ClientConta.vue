@@ -229,7 +229,7 @@ export default {
 
                     case 'nome':
 
-                        axios.post(self.$store.state.pathAxios, params).then(function (res) {
+                        axios.post(self.$store.state.pathAxiosEditUser, params).then(function (res) {
 
                             //console.log(res.data.result)
 
@@ -278,7 +278,7 @@ export default {
 
                     case 'adr':
 
-                        axios.post(self.$store.state.pathAxios, params).then(function (res) {
+                        axios.post(self.$store.state.pathAxiosEditUser, params).then(function (res) {
 
                             //console.log(res.data.result)
 
@@ -326,7 +326,7 @@ export default {
 
                     case 'fone':
 
-                        axios.post(self.$store.state.pathAxios, params).then(function (res) {
+                        axios.post(self.$store.state.pathAxiosEditUser, params).then(function (res) {
 
                             //console.log(res.data.result)
 
@@ -374,7 +374,7 @@ export default {
 
                     case 'pass':
 
-                        axios.post(self.$store.state.pathAxios, params).then(function (res) {
+                        axios.post(self.$store.state.pathAxiosEditUser, params).then(function (res) {
 
                             //console.log(res.data.result)
 

@@ -136,7 +136,7 @@ export default {
 
                 const self = this
 
-                axios.post(`http://172.16.1.48:5000/`,params).then(function (res) {
+                axios.post($store.state.pathAxiosPostCadastro,params).then(function (res) {
 
                     if (res.data.status == 'cadastroauth') {
 
