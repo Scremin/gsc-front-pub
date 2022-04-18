@@ -77,6 +77,8 @@ export default {
       localStorage.setItem('trafegoLocal', JSON.stringify(update_trafegoLocal))
 
       console.log('update_trafegoLocal: ',update_trafegoLocal)
+
+      window.location.reload() // forçar update => renderizar home após overlay.
     }
   },
   mounted () {
