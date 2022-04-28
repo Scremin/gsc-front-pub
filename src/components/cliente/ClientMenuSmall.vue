@@ -106,6 +106,7 @@ export default {
 
                     var update_trafegoLocal = {
 
+                        storedOverLay: trafegoLocal.storedOverLay, // bool <--------- hold
                         storedUserLogado: this.$store.state.flagUserAtivo, // bool <------ update
                         storedDateUser: trafegoLocal.storedDateUser, // {} <--------- hold (resetar)
                         storedPddListUser: trafegoLocal.storedPddListUser, // [] <--- hold (resetar)

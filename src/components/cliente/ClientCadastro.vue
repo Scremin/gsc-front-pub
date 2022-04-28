@@ -142,7 +142,9 @@ export default {
 
                 axios.post(self.$store.state.pathAxiosPostCadastro,params).then(function (res) {
 
-                    if (res.data.status == 'cadastroauth') {
+                    console.log(res.data.result)
+
+                    if (res.data.result == 'cadastroauth') {
 
                         // -- Após confirm novo cadastro inserido.
                         self.$store.state.nomeUsuario = self.nameClient

@@ -122,7 +122,7 @@ export default {
 
                     //console.log(res)
 
-                    if (res.data.status == 'authok') {
+                    if (res.data.result != 'nenhum user encontrado') {
 
                         //console.log(res.data.status)
 
@@ -155,6 +155,7 @@ export default {
 
                         var update_trafegoLocal = {
 
+                            storedOverLay: trafegoLocal.storedOverLay, // bool <--------- hold
                             storedUserLogado: self.$store.state.flagUserAtivo, // bool <------ update
                             storedDateUser: dataUser, // {} <--------------------------------- update
                             storedPddListUser: res.data.result.liPdds, // [] <---------------- update

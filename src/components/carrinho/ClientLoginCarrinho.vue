@@ -78,6 +78,7 @@ export default {
                 // varrer db.
                 // trazer user name e pass.
                 // verif. existência. SE NÃO existir ENTÃO retornar msg error.
+                this.msgErrorLogin = '' // init (reset).
 
                 var params = {
 
@@ -90,9 +91,11 @@ export default {
 
                 axios.post(self.$store.state.pathAxiosPostLogin,params).then(function (res) {
 
-                    if (res.data.status == 'authok') {
+                    console.log(res.data.result)
 
-                        //console.log(res.data.status)
+                    if (res.data.result != 'nenhum user encontrado') {
+
+                        //console.log(res.data.result)
 
                         // -- Após busca db rcv dados cliente.
                         self.$store.state.nomeUsuario = res.data.result.dataUser.nome
@@ -123,6 +126,7 @@ export default {
 
                         var update_trafegoLocal = {
 
+                            storedOverLay: trafegoLocal.storedOverLay, // bool <--------- hold
                             storedUserLogado: self.$store.state.flagUserAtivo, // bool <------ update
                             storedDateUser: dataUser, // {} <--------------------------------- update
                             storedPddListUser: res.data.result.liPdds, // [] <---------------- update

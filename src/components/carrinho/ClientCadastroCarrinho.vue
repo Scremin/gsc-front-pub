@@ -138,7 +138,7 @@ export default {
 
                 axios.post(self.$store.state.pathAxiosPostCadastro,params).then(function (res) {
 
-                    if (res.data.status == 'cadastroauth') {
+                    if (res.data.result == 'cadastroauth') {
 
                         // -- Após confirm novo cadastro inserido.
                         self.$store.state.nomeUsuario = self.nameClient
@@ -167,6 +167,7 @@ export default {
 
                         var update_trafegoLocal = {
 
+                            storedOverLay: trafegoLocal.storedOverLay, // bool <--------- hold
                             storedUserLogado: self.$store.state.flagUserAtivo, // bool <------ update
                             storedDateUser: dataUser, // {} <--------------------------------- update
                             storedPddListUser: trafegoLocal.storedPddListUser, // [] <--- hold

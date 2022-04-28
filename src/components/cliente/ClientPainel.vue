@@ -182,7 +182,7 @@ export default {
 
     methods: {
 
-        cancelarPdd(idPdd,liCart) {
+        cancelarPdd(idPdd,liCart) { // liCart VEM DE pdd.pdd (CARRINHO DO PEDIDO).
 
             //console.log('idPdd:', idPdd)
             //console.log('liCart:', liCart)
@@ -208,6 +208,7 @@ export default {
                         // ---- SE o idP da categoria i ENTÃO receber qnt do prod contida no db.
                         if(this.liProd[h].idP == liCart[k].idP) {
 
+                            // inc a qnt contida no pdd de volta ao db.
                             var newQnt = parseInt(this.liProd[h].qntProd) + parseInt(liCart[k].qnt)
                             //console.log('qntProd atual: ',this.liProd[h].qntProd)
                             //console.log('qnt prod cart atual: ',liCart[k].qnt)
@@ -219,7 +220,7 @@ export default {
                                 idP:liCart[k].idP,
                                 qntProd:newQnt
                             }
-                            //console.log('el_editQntProd: ',el_editQntProd)
+                            console.log('el_editQntProd: ',el_editQntProd)
                             this.$store.commit('change_qnt_prod', el_editQntProd)
                         }
 
@@ -263,6 +264,7 @@ export default {
 
                 var update_trafegoLocal = {
 
+                    storedOverLay: trafegoLocal.storedOverLay, // bool <--------- hold
                     storedUserLogado: trafegoLocal.storedUserLogado, // bool <--- hold
                     storedDateUser: trafegoLocal.storedDateUser, // {} <--------- hold
                     storedPddListUser: lista_de_pedidos_geral, // [] <---------------- update
@@ -340,6 +342,7 @@ export default {
 
                     var update_trafegoLocal = {
 
+                        storedOverLay: trafegoLocal.storedOverLay, // bool <--------- hold
                         storedUserLogado: trafegoLocal.storedUserLogado, // bool <--- hold
                         storedDateUser: trafegoLocal.storedDateUser, // {} <--------- hold
                         storedPddListUser: lista_de_pedidos_geral, // [] <---------------- update
@@ -387,6 +390,8 @@ export default {
         window.scrollTo(0,0)
 
         this.$store.commit('updateContentApp') // without param. Initial main GET Req.
+
+        //console.log('pdd: ',this.pdd)
 
         //console.log('this.pdd.liMsgsFromCms: ',this.pdd.liMsgsFromCms)
         //var = liForGetChat = [this.pdd.idPdd, this.pdd.liMsgsFromCms]

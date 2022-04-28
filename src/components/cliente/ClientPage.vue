@@ -79,7 +79,7 @@ export default {
             //console.log(update_trafegoLocal.storedPddListUser[1].statusPdd)
             //console.log('lista_geral_pdds:',this.lista_geral_pdds[1].statusPdd)
 
-            window.location.reload() // forçar update
+            //window.location.reload() // forçar update
         },
         updateComprovPdd(update_trafegoLocal) {
 

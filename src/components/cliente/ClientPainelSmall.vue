@@ -263,6 +263,7 @@ export default {
 
                 var update_trafegoLocal = {
 
+                    storedOverLay: trafegoLocal.storedOverLay, // bool <--------- hold
                     storedUserLogado: trafegoLocal.storedUserLogado, // bool <--- hold
                     storedDateUser: trafegoLocal.storedDateUser, // {} <--------- hold
                     storedPddListUser: lista_de_pedidos_geral, // [] <---------------- update
@@ -340,6 +341,7 @@ export default {
 
                     var update_trafegoLocal = {
 
+                        storedOverLay: trafegoLocal.storedOverLay, // bool <--------- hold
                         storedUserLogado: trafegoLocal.storedUserLogado, // bool <--- hold
                         storedDateUser: trafegoLocal.storedDateUser, // {} <--------- hold
                         storedPddListUser: lista_de_pedidos_geral, // [] <---------------- update

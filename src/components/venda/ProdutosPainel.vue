@@ -232,16 +232,18 @@ export default {
         },
         addProd(idC, idP, tit, setoptionsProd, pr, qntProd) {
 
+            this.msgErrorInputQnt = '' // init (Reset).
+
             //console.log('id categ:',idC)
             //console.log('id prod:',idP)
 
             // SE qnt selecionada > qnt disponível ENTÃO não fecha.
-            if (this.qntProdInput > qntProd) {
+            if (parseInt(this.qntProdInput) > qntProd) {
 
                 this.msgErrorInputQnt = 'Apenas restam ' + qntProd + ' unidades.'
                 this.flagErrorInputQnt = true // ativar exibição de msg error.
                 this.idP_dinamico = idP // permitir exibir apenas para o produto específico.
-                console.log('Apenas restam 10 unidades')
+                //console.log('Apenas restam 10 unidades')
                 return
             }
 
@@ -308,7 +310,7 @@ export default {
                       listCar[c].setoptionsProd == setoptionsProd
                 ) {
 
-                    listCar[c].qnt = listCar[c].qnt + this.qntProdInput
+                    listCar[c].qnt = parseInt(listCar[c].qnt) + parseInt(this.qntProdInput)
 
                     this.$store.state.listCar = listCar // update listCar
                     //console.log('produto incrementado')

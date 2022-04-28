@@ -9,24 +9,24 @@ export default new Vuex.Store({
   state: {
     //pathAxios: `https://gsc-api.vercel.app/`,
 
-    pathAxiosObterHome:`https://gsc--api.herokuapp.com/home`,
+    pathAxiosObterHome:`https://gsc-green-house.herokuapp.com/home`,
 
-    pathAxiosObterTxEntrega:`https://gsc--api.herokuapp.com/gettx`,
-    pathAxiosObterStatusLoja:`https://gsc--api.herokuapp.com/getstatusloja`,
+    pathAxiosObterTxEntrega:`https://gsc-green-house.herokuapp.com/gettx`,
+    pathAxiosObterStatusLoja:`https://gsc-green-house.herokuapp.com/getstatusloja`,
 
-    pathAxiosMudarQntProd:`https://gsc--api.herokuapp.com/changeqntprod`,
-    pathAxiosPostElHis:`https://gsc--api.herokuapp.com/postelhiss`,
-    pathAxiosUpdatePddsUserDB:`https://gsc--api.herokuapp.com/postpdd`, // certeza de rota?
-    pathAxiosObterHis:`https://gsc--api.herokuapp.com/gethiss`,
+    pathAxiosMudarQntProd:`https://gsc-green-house.herokuapp.com/changeqntprod`,
+    pathAxiosPostElHis:`https://gsc-green-house.herokuapp.com/postelhiss`,
+    pathAxiosUpdatePddsUserDB:`https://gsc-green-house.herokuapp.com/postpdd`, // certeza de rota?
+    pathAxiosObterHis:`https://gsc-green-house.herokuapp.com/gethiss`,
 
-    pathAxiosObterPromo:`https://gsc--api.herokuapp.com/getpromo`,
+    pathAxiosObterPromo:`https://gsc-green-house.herokuapp.com/getpromo`,
 
-    pathAxiosObterPddsCl:`https://gsc--api.herokuapp.com/getpddscl`,
-    pathAxiosMudarStatusPdd:`https://gsc--api.herokuapp.com/poststatuspdd`,
-    pathAxiosAddComprovPay:`https://gsc--api.herokuapp.com/postincimgpdd`,
-    pathAxiosPostCadastro:`https://gsc--api.herokuapp.com/cadastro`,
-    pathAxiosPostLogin:`https://gsc--api.herokuapp.com/login`,
-    pathAxiosEditUser:`https://gsc--api.herokuapp.com/useredit`,
+    pathAxiosObterPddsCl:`https://gsc-green-house.herokuapp.com/getpddscl`,
+    pathAxiosMudarStatusPdd:`https://gsc-green-house.herokuapp.com/poststatuspdd`,
+    pathAxiosAddComprovPay:`https://gsc-green-house.herokuapp.com/postincimgpdd`,
+    pathAxiosPostCadastro:`https://gsc-green-house.herokuapp.com/cadastro`,
+    pathAxiosPostLogin:`https://gsc-green-house.herokuapp.com/login`,
+    pathAxiosEditUser:`https://gsc-green-house.herokuapp.com/useredit`,
 
     // -- Operações gerais do app
     statusLoja:'off',
@@ -363,6 +363,7 @@ export default new Vuex.Store({
 
       var update_trafegoLocal = {
 
+        storedOverLay: trafegoLocal.storedOverLay, // bool <--------- hold
         storedUserLogado: trafegoLocal.storedUserLogado, // bool <--- hold
         storedDateUser: trafegoLocal.storedDateUser, // {} <--------- hold
         storedPddListUser: trafegoLocal.storedPddListUser, // [] <--- hold
@@ -400,13 +401,14 @@ export default new Vuex.Store({
 
         token:'testToken',
         func:'getPddsCl',
-        nome:nomeCl /* POST request */
+        data:nomeCl /* POST request */
       }
 
       //const self = this
       
       axios.post(state.pathAxiosObterPddsCl, params).then(function (res) {
 
+        //console.log('from mutation - getPddCl')
         //console.log(res.data.result)
         
         // -- STORAGE
@@ -414,6 +416,7 @@ export default new Vuex.Store({
 
         var update_trafegoLocal = {
 
+          storedOverLay: trafegoLocal.storedOverLay, // bool <--------- hold
           storedUserLogado: trafegoLocal.storedUserLogado, // bool <--- hold
           storedDateUser: trafegoLocal.storedDateUser, // {} <--------- hold
           storedPddListUser: res.data.result, // [] <----------------------- update
