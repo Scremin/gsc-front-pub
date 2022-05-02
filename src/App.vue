@@ -25,6 +25,10 @@
           />
 
           <span class="box_txt_overlay">Tenho mais de 18 anos</span>
+
+          <!-- DENTRO DO BTN . PARA VER OS TERMOS DEVE SER MAIOR DE IDADE -->
+          <v-btn color="red" @click="verTermos()">Termos de uso</v-btn>
+
         </div>
       </v-btn>
     </v-overlay>
@@ -58,6 +62,24 @@ export default {
     //overlay:true, // init on overlay.
   }),
   methods: {
+    verTermos() {
+      this.$store.state.statusOverLay = false // desabilitar overlay e habilitar app.
+
+      var trafegoLocal = JSON.parse(localStorage.getItem('trafegoLocal'))
+      var update_trafegoLocal = {
+
+          storedOverLay:false, // bool <------------------------------------ update
+          storedUserLogado: trafegoLocal.storedUserLogado, // bool <-- hold
+          storedDateUser: trafegoLocal.storedDateUser, // {} <-------- hold
+          storedPddListUser: trafegoLocal.storedPddListUser, // [] <-- hold
+          storedCarrinho: trafegoLocal.storedCarrinho, // [] <-------- hold
+          storageElemsCateg: trafegoLocal.storageElemsCateg, // {} <-- hold
+          storedPddListGeral: trafegoLocal.storedPddListGeral // [] <- hold
+      }
+      localStorage.setItem('trafegoLocal', JSON.stringify(update_trafegoLocal))
+
+      this.$router.push('/termos')
+    },
     changeOverLay () {
 
       //this.overlay = false

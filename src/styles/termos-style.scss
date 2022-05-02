@@ -1,0 +1,14 @@
+@font-face {
+
+    font-family: tx;
+    src: url('./assets/fonts/Solway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.main-aux-redirect {
+    display: flex;
+    flex-direction: column;
+
+    font-family: tx;
+}
