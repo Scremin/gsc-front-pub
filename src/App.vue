@@ -12,7 +12,7 @@
     >
       <v-btn
         class="btn_overlay"
-        :style="{'height':'200px'}"
+        :style="{'height':'230px'}"
         color="success"
         @click="changeOverLay()"
       >
@@ -28,9 +28,9 @@
 
           <!-- DENTRO DO BTN . PARA VER OS TERMOS DEVE SER MAIOR DE IDADE -->
           <v-btn color="red" @click="verTermos()">Termos de uso</v-btn>
-
         </div>
       </v-btn>
+    
     </v-overlay>
 
     <MenuMain v-if="this.$store.state.statusOverLay == false" />

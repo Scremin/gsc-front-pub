@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import Termos from '@/components/Termos.vue'
+
 import Home from '@/components/home/Home.vue'
 import DivulgacaoCarousel from '@/components/home/DivulgacaoCarousel.vue'
 import ClientHome from '@/components/cliente/ClientHome.vue'
@@ -26,6 +28,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/termos',
+    name: 'Termos',
+    component: Termos
   },
   {
     path: '/divulg',
