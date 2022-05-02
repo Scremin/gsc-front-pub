@@ -27,7 +27,7 @@
           <span class="box_txt_overlay">Tenho mais de 18 anos</span>
 
           <!-- DENTRO DO BTN . PARA VER OS TERMOS DEVE SER MAIOR DE IDADE -->
-          <v-btn color="red" @click="verTermos()">Termos de uso</v-btn>
+          <v-btn color="rgba(168,243,15,1)" @click="verTermos()">Termos de uso</v-btn>
         </div>
       </v-btn>
     
