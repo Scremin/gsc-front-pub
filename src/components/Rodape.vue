@@ -45,7 +45,11 @@
 
             <span>+351 928 113 960</span>
 
-            <span :style="{'margin-top':'20px'}">&copy; {{ new Date().getFullYear() }} Desenvolvimento UPinC</span>
+            <!-- {{ new Date().getFullYear() }} -->
+            <span :style="{'margin-top':'20px','cursor':'pointer'}"
+            @click="chamarUP()"
+            >
+                &copy; 2022 Desenvolvimento UPinC</span>
         </div>
 
     </div>
@@ -72,6 +76,9 @@ export default {
         chamarYT() {
             window.location = 'https://www.youtube.com/channel/UC8bTk8B3JzopXtycUhgHURg'
         },
+        chamarUP() {
+            window.location = 'https://www.upinc.tech'
+        }
     }
 }
 </script>
