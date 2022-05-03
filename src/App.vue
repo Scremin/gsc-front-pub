@@ -35,7 +35,7 @@
 
     <MenuMain v-if="this.$store.state.statusOverLay == false" />
 
-    <v-main>
+    <v-main v-if="this.$store.state.statusOverLay == false">
       <router-view/>
     </v-main>
 
