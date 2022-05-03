@@ -21,7 +21,10 @@ import CarrinhoPageD from '@/components/carrinho/CarrinhoPageD.vue'
 
 import store from '@/store/index.js'
 
+import VueMeta from 'vue-meta'
+
 Vue.use(VueRouter)
+Vue.use(VueMeta)
 
 const routes = [
   {

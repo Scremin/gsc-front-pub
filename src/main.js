@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
 import PayPal from 'vue-paypal-checkout'
+import VueMeta from 'vue-meta'
 
 import MuktaRegular from './assets/fonts/Mukta-Regular.ttf';
 //import './assets/fonts/fonts.scss'
@@ -23,3 +24,7 @@ new Vue({
   vuetify,
   render: h => h(App)
 }).$mount('#app')
+
+Vue.use(VueMeta, {
+  keyName: 'head'
+})

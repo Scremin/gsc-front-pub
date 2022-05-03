@@ -57,6 +57,19 @@ export default {
 
   components: { MenuMain, ExtraLine, Rodape },
 
+  metaInfo: {
+    title: 'Green Social Clube',
+    titleTemplate: '%s | Green House Covilhã',
+    htmlAttrs: {
+      lang: 'pt'
+    },
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'description', content: 'Onde comprar CDB na Covilhã' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    ]
+  },
+
   data: () => ({
     absolute:true,
     //overlay:true, // init on overlay.
