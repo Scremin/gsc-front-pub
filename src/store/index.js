@@ -8,25 +8,26 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     //pathAxios: `https://gsc-api.vercel.app/`,
+    //app_heroku:'gscapicastar', // anterior: gsc-green-house
 
-    pathAxiosObterHome:`https://gsc-green-house.herokuapp.com/home`,
+    pathAxiosObterHome:`https://gscapicastar.herokuapp.com/home`,
 
-    pathAxiosObterTxEntrega:`https://gsc-green-house.herokuapp.com/gettx`,
-    pathAxiosObterStatusLoja:`https://gsc-green-house.herokuapp.com/getstatusloja`,
+    pathAxiosObterTxEntrega:`https://gscapicastar.herokuapp.com/gettx`,
+    pathAxiosObterStatusLoja:`https://gscapicastar.herokuapp.com/getstatusloja`,
 
-    pathAxiosMudarQntProd:`https://gsc-green-house.herokuapp.com/changeqntprod`,
-    pathAxiosPostElHis:`https://gsc-green-house.herokuapp.com/postelhiss`,
-    pathAxiosUpdatePddsUserDB:`https://gsc-green-house.herokuapp.com/postpdd`, // certeza de rota?
-    pathAxiosObterHis:`https://gsc-green-house.herokuapp.com/gethiss`,
+    pathAxiosMudarQntProd:`https://gscapicastar.herokuapp.com/changeqntprod`,
+    pathAxiosPostElHis:`https://gscapicastar.herokuapp.com/postelhiss`,
+    pathAxiosUpdatePddsUserDB:`https://gscapicastar.herokuapp.com/postpdd`, // certeza de rota?
+    pathAxiosObterHis:`https://gscapicastar.herokuapp.com/gethiss`,
 
-    pathAxiosObterPromo:`https://gsc-green-house.herokuapp.com/getpromo`,
+    pathAxiosObterPromo:`https://gscapicastar.herokuapp.com/getpromo`,
 
-    pathAxiosObterPddsCl:`https://gsc-green-house.herokuapp.com/getpddscl`,
-    pathAxiosMudarStatusPdd:`https://gsc-green-house.herokuapp.com/poststatuspdd`,
-    pathAxiosAddComprovPay:`https://gsc-green-house.herokuapp.com/postincimgpdd`,
-    pathAxiosPostCadastro:`https://gsc-green-house.herokuapp.com/cadastro`,
-    pathAxiosPostLogin:`https://gsc-green-house.herokuapp.com/login`,
-    pathAxiosEditUser:`https://gsc-green-house.herokuapp.com/useredit`,
+    pathAxiosObterPddsCl:`https://gscapicastar.herokuapp.com/getpddscl`,
+    pathAxiosMudarStatusPdd:`https://gscapicastar.herokuapp.com/poststatuspdd`,
+    pathAxiosAddComprovPay:`https://gscapicastar.herokuapp.com/postincimgpdd`,
+    pathAxiosPostCadastro:`https://gscapicastar.herokuapp.com/cadastro`,
+    pathAxiosPostLogin:`https://gscapicastar.herokuapp.com/login`,
+    pathAxiosEditUser:`https://gscapicastar.herokuapp.com/useredit`,
 
     // -- Operações gerais do app
     statusLoja:'off',
