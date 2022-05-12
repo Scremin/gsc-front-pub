@@ -501,7 +501,7 @@ export default new Vuex.Store({
       })
     },
     postElHis(state, el_his) {
-      state.flagAuxExtra = true // apenas para utilizar o state. true não utilizado.
+      state.flagAuxExtra = true // apenas para utilizar o state. true não utilizado..
 
       var params = {
 
