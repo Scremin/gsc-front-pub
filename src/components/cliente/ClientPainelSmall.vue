@@ -393,20 +393,20 @@ export default {
         // db chat
 
         // Se nenhum comprovante estiver siso enviado.
-        if ( this.pdd.flagComprov != 'not_rcved' || this.pdd.flagComprov != '') {
+        /*if ( this.pdd.flagComprov != 'not_rcved' || this.pdd.flagComprov != '') {
 
             this.corMsgCompr = 'rgba(121, 174, 64, 1)'
             this.msgComprov = 'Comprovante enviado'
             this.iconComprov = 'mdi-check'
             this.colorIconComprov = 'rgba(121, 174, 64, 1)'
 
-        } else {
+        } else {*/
 
-            this.corMsgCompr = 'rgb(204, 22, 22)'
-            this.msgComprov = 'Comprovante ainda não enviado'
-            this.iconComprov = 'mdi-alert-octagon'
-            this.colorIconComprov = 'rgb(204, 22, 22)'
-        } 
+        this.corMsgCompr = 'rgb(204, 22, 22)'
+        this.msgComprov = 'Comprovante ainda não enviado'
+        this.iconComprov = 'mdi-alert-octagon'
+        this.colorIconComprov = 'rgb(204, 22, 22)'
+        //} 
     }
 }
 </script>
