@@ -247,6 +247,15 @@ export default {
                 return
             }
 
+            if (qntProd < 0) {
+
+                this.msgErrorInputQnt = 'Produto esgotado.'
+                this.flagErrorInputQnt = true // ativar exibição de msg error.
+                this.idP_dinamico = idP // permitir exibir apenas para o produto específico.
+                //console.log('Apenas restam 10 unidades')
+                return
+            }
+
             // rcv form (produto a ser inserido no carrinho).
             this.conteinerProd = {
                 
