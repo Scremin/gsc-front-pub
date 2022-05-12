@@ -247,7 +247,7 @@ export default {
                 return
             }
 
-            if (qntProd < 0) {
+            if (qntProd < 0) { // 12/05 updated
 
                 this.msgErrorInputQnt = 'Produto esgotado.'
                 this.flagErrorInputQnt = true // ativar exibição de msg error.
