@@ -108,14 +108,16 @@ export default {
 
                         storedOverLay: trafegoLocal.storedOverLay, // bool <--------- hold
                         storedUserLogado: this.$store.state.flagUserAtivo, // bool <------ update
-                        storedDateUser: trafegoLocal.storedDateUser, // {} <--------- hold (resetar)
-                        storedPddListUser: trafegoLocal.storedPddListUser, // [] <--- hold (resetar)
+                        storedDateUser: {}, // {} <--------------------------------------- reset
+                        storedPddListUser: [], // [] <------------------------------------ reset
                         storedCarrinho: trafegoLocal.storedCarrinho, // [] <--------- hold
                         storageElemsCateg: trafegoLocal.storageElemsCateg, // {} <--- hold
                         storedPddListGeral: trafegoLocal.storedPddListGeral // [] <-- hold
                     }
 
                     localStorage.setItem('trafegoLocal', JSON.stringify(update_trafegoLocal))
+
+                    window.location.reload()
 
                     break;
             }

@@ -411,6 +411,8 @@ export default {
         var trafegoLocal = JSON.parse(localStorage.getItem('trafegoLocal'))
 
         this.$store.state.nomeUsuario = trafegoLocal.storedDateUser.nome
+        this.$store.state.enderecoUsuario = trafegoLocal.storedDateUser.adr
+        this.$store.state.foneUsuario = trafegoLocal.storedDateUser.fone
     }
 }
 </script>

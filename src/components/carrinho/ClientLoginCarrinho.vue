@@ -25,6 +25,7 @@
                 placeholder="Insira a senha do usuário" />
 
             <v-btn
+            v-if="!flagBuscandoLogin"
             @click="loginInput()"
             block
             outlined
@@ -55,14 +56,18 @@ export default {
             nameClient: '',
             passClient: '',
             msgErrorLogin: '',
+
+            flagBuscandoLogin:false,
         }
     },
     
     methods: {
         loginInput() {
 
+            this.flagBuscandoLogin = true // desable "entrar"
+
             console.log(this.nameClient)
-            console.log(this.passClient)
+            //console.log(this.passClient)
 
             // -- verificação de critérios mínimos de inserção.
             if (this.nameClient == '' ||

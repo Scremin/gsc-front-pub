@@ -38,9 +38,10 @@
                 name="passClient"
                 class="subheading inputNameClient animate__animated animate__flash"
                 v-on:keyup.enter="cadastroInput()"
-                placeholder="Insira a senha do novo usuário" />
+                placeholder="Mínimo 5 caracteres" />
 
             <v-btn
+            v-if="!flagBuscandoCadastro"
             @click="cadastroInput()"
             :style="{'margin-top':'10px'}"
             block
@@ -83,11 +84,15 @@ export default {
             foneClient: '',
 
             msgErrorLogin: '',
+
+            flagBuscandoCadastro:false,
         }
     },
     
     methods: {
         cadastroInput() {
+
+            this.flagBuscandoCadastro = true // desabilitar btn "entrar"
 
             /*console.log(this.nameClient)
             console.log(this.enderecoClient)
@@ -97,7 +102,7 @@ export default {
             // -- verificação de critérios mínimos de inserção.
             if (this.nameClient == '' ||
              this.passClient == '' ||
-             this.nameClient.length < 5 ||
+             this.nameClient.length < 2 ||
              this.passClient.length < 5) {
                 
                 this.msgErrorLogin = 'Usuário ou senha inválidos.'
@@ -137,6 +142,8 @@ export default {
                 const self = this
 
                 axios.post(self.$store.state.pathAxiosPostCadastro,params).then(function (res) {
+
+                    console.log(res.data.result)
 
                     if (res.data.result == 'cadastroauth') {
 

@@ -252,7 +252,7 @@ export default {
                 
                 idC: idC,
                 idP: idP,
-                qnt: this.qntProdInput, // editável também fora do formulário.
+                qnt: parseInt(this.qntProdInput), // editável também fora do formulário.
                 tit: tit,
                 setoptionsProd: setoptionsProd,
                 pr: pr,

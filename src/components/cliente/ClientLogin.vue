@@ -43,6 +43,7 @@
                 placeholder="Insira a senha do usuário" />
 
             <v-btn
+            v-if="!flagBuscandoLogin"
             @click="chamarClientPage()"
             block
             outlined
@@ -76,6 +77,8 @@ export default {
             passClient: '',
             msgErrorLogin: '',
 
+            flagBuscandoLogin:false,
+
             // variáveis do carousel.
             timer: null,
             polling: null,
@@ -96,6 +99,8 @@ export default {
 
     methods: {
         chamarClientPage() { // passar o formulario, verificando validade dos dados inseridos.
+
+            this.flagBuscandoLogin = true
 
             // -- verificação de critérios mínimos de inserção.
             if (this.nameClient == '' ||

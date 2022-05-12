@@ -479,8 +479,8 @@ export default new Vuex.Store({
         data:infoInsert /* POST request */
       }
     
-      axios.post(state.pathAxiosUpdatePddsUserDB, params).then(function () {
-          //console.log(res.data.result)
+      axios.post(state.pathAxiosUpdatePddsUserDB, params).then(function (res) {
+        console.log(res.data.result)
       })
     },
     change_qnt_prod(state,el_editQntProd) {

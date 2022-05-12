@@ -127,6 +127,8 @@
 
                     localStorage.setItem('trafegoLocal', JSON.stringify(update_trafegoLocal))
 
+                    window.location.reload()
+
                     break;
             }
         }

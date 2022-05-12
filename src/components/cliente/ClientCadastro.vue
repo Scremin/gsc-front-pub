@@ -46,6 +46,7 @@
                 placeholder="Insira a senha do novo usuário" />
 
             <v-btn
+            v-if="!flagBuscandoCadastro"
             @click="chamarClientPage()"
             :style="{'margin-top':'10px'}"
             block
@@ -88,6 +89,8 @@ export default {
             foneClient: '',
 
             msgErrorLogin: '',
+
+            flagBuscandoCadastro:false,
         }
     },
 
@@ -98,10 +101,12 @@ export default {
         },
         chamarClientPage() { // passar o formulario, verificando validade dos dados inseridos.
 
+            this.flagBuscandoCadastro = true
+
             // -- verificação de critérios mínimos de inserção.
             if (this.nameClient == '' ||
              this.passClient == '' ||
-             this.nameClient.length < 5 ||
+             this.nameClient.length < 2 ||
              this.passClient.length < 5) {
                 
                 this.msgErrorLogin = 'Usuário ou senha inválidos.'

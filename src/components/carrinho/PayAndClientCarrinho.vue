@@ -303,7 +303,7 @@ export default {
 
             var pdd = {
 
-                idPdd: lista_de_pedidos_geral.length,
+                idPdd: trafegoLocal.storedPddListUser.length,
                 statusPdd: 'Esperando confirmação da loja',
                 metPay: metPay,
                 flagComprov: 'Comprovante ainda não enviado',
@@ -355,7 +355,7 @@ export default {
             var pdd_for_his = {
 
                 _id: this.$store.state.li_pdds_his.length, // novo id de posicionamento no db.
-                idPdd: pdd.idPdd, // id do pedido.
+                idPdd: trafegoLocal.storedPddListUser.length, // id do pedido.
                 nome: trafegoLocal.storedDateUser.nome,
                 adr: trafegoLocal.storedDateUser.adr,
                 fone: trafegoLocal.storedDateUser.fone,
@@ -410,6 +410,8 @@ export default {
         this.$store.state.foneUsuario = trafegoLocal.storedDateUser.fone
         // ---- nova checkagem da lista carrinho.
         this.$store.state.listCar = trafegoLocal.storedCarrinho
+
+        console.log('li pdd tam: ',trafegoLocal.storedPddListUser.length)
     }
 }
 </script>
