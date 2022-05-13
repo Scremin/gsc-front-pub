@@ -27,7 +27,7 @@
                 name="enderecoClient"
                 class="subheading inputNameClient animate__animated animate__flash"
                 v-on:keyup.enter="chamarClientPage()"
-                placeholder="Insira o endereço completo: .. porta, andar.." />
+                placeholder="Morada completa: ..rua, porta, andar, lado.." />
 
             <!-- TELEMÓVEL DO USUÁRIO -->
             <span class="labelNameClient">Telemóvel</span>
