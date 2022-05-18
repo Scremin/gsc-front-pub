@@ -32,14 +32,14 @@
                 large
                 class="green--text btn_carousel" @click="saberMain(prod.idC, prod.idP)">Saber mais</v-btn>
 
-                <v-select
+                <!--<v-select
                 :items="prod.optionsLi"
                 v-model="prod.setoptionsProd"
                 label="Opções"
                 dense
                 solo
                 class="select_prod"
-                ></v-select>
+                ></v-select>-->
 
                 <div class="lastLine_prod">
 
@@ -236,9 +236,18 @@ export default {
 
             //console.log('id categ:',idC)
             //console.log('id prod:',idP)
+            console.log('qntProd: ',qntProd)
 
             // SE qnt selecionada > qnt disponível ENTÃO não fecha.
-            if (parseInt(this.qntProdInput) > qntProd) {
+            if (parseInt(this.qntProdInput) > qntProd || parseInt(this.qntProdInput) < 0) {
+
+                if (qntProd == "") {
+
+                    this.msgErrorInputQnt = 'Apenas restam ' + '0' + ' unidades.'
+                    this.flagErrorInputQnt = true // ativar exibição de msg error.
+                    this.idP_dinamico = idP // permitir exibir apenas para o produto específico.
+                    return
+                }
 
                 this.msgErrorInputQnt = 'Apenas restam ' + qntProd + ' unidades.'
                 this.flagErrorInputQnt = true // ativar exibição de msg error.

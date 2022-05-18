@@ -25,7 +25,7 @@
 
     border-radius: 4px;
 
-    //max-width: 400px;
+    max-width: 410px;
     margin: 10px;
 
     background: rgba(255,255,255,0.5);
@@ -35,7 +35,7 @@
 .box_produtosPainel .el_produto .img_prod {
     display: flex;
 
-    width: 160px;
+    width: 150px;
     height: 200px;
     margin: 4px;
 
@@ -57,6 +57,7 @@
 
     margin: 10px;
     //max-width: 150px; /* PODE SER QUE HAJA ALTERAÇÃO DEVIDO AO ESTILO HORIZONTALMENTE ESTICADO */
+    width: 140px;
 
     font-size: 1.6rem;
     font-weight: 800;
@@ -79,9 +80,10 @@
 }
 .box_produtosPainel .el_produto .col_prod .lastLine_prod {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
+    width: 150px;
     flex-wrap: wrap;
 
     //border: 1px solid red;
@@ -90,6 +92,7 @@
     display: flex;
     
     margin: 4px;
+    font-size: small;
 
     //border: 1px solid red;
 }
